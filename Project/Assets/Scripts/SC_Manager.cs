@@ -6,7 +6,7 @@ public class SC_Manager : MonoBehaviour {
 	
 	public GUISkin inGameGUI;
 	public int optionAmount;
-	public List<bool> option = new List<bool>();
+	public bool option01;
 
 	int guiX = 10;
 	int guiY = 300;
@@ -22,10 +22,16 @@ public class SC_Manager : MonoBehaviour {
 	}
 
 	void OnGUI() {
+		GUI.skin = inGameGUI;
+		/*
 		for(int i = 0; i < optionAmount; i++){
-			option[i] = GUI.Toggle (new Rect (guiX, guiY + (i*heightMult), 60, 15), option[i], "Testing Toggle Button");
+			if(GUI.Button (new Rect (guiX, guiY + (i*heightMult), 60, 15), "Testing Toggle Button")){
+				print ("User clicked button "+i);
+			}
 		}
-		if (GUI.Button (new Rect (0, 60, 150, 20), "Ok"))
-			print ("user clicked ok");
+		*/
+		if(GUI.Button (new Rect (50, 50, 350, 50), "Testing button text")){
+			Debug.Log ("User clicked button");
+		}
 	}
 }
