@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class EventManager : MonoBehaviour {
 	public GameObject mainCharacter;
 	public GameObject secondaryCharacter;
+	public int sceneNumber = 0;
 
 	private GUIText description;
 
