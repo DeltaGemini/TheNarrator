@@ -104,7 +104,7 @@ MonoBehaviour:
   inGameGUI: {fileID: 11400000, guid: 3e8a502dae175fb498a81ea009ad1591, type: 2}
   resultA: 
   resultB: 
-  highValueSceneName: 0
+  highValueSceneName: 2
   lowValueSceneName: 0
   decisionValue: 10
   gameOverScene: 1
