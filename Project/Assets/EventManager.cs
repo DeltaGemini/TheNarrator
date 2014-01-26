@@ -113,7 +113,8 @@ public class EventManager : MonoBehaviour {
 			choiceWindow3.enabled=false;
 			choiceWindow4.enabled=false;
 
-			Invoke("LoadNewScene",0f);
+			GameObject.FindGameObjectWithTag("fadeInOut").GetComponent<FadeInOut>().Fade(false);
+			Invoke("LoadNewScene",GameObject.FindGameObjectWithTag("fadeInOut").GetComponent<FadeInOut>().fadeTime);
 		}
 	}
 

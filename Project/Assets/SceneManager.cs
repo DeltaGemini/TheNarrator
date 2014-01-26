@@ -22,6 +22,7 @@ public class SceneManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {	
+		scenes = new List<string>();
 		scenes.Add("11");
 		scenes.Add("7");
 		scenes.Add("5");

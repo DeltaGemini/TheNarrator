@@ -16,6 +16,7 @@ TagManager:
   - choiceOverlay2
   - choiceOverlay3
   - choiceOverlay4
+  - fadeInOut
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
