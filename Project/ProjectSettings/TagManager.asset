@@ -11,6 +11,11 @@ TagManager:
   - EventManager
   - mainChar
   - npc1
+  - SceneManager
+  - choiceOverlay1
+  - choiceOverlay2
+  - choiceOverlay3
+  - choiceOverlay4
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

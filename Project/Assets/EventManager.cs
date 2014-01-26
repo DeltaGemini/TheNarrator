@@ -3,9 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class EventManager : MonoBehaviour {
-	public GameObject mainCharacter;
-	public GameObject secondaryCharacter;
-	public int sceneNumber = 0;
 
 	private GUIText description;
 
@@ -14,22 +11,40 @@ public class EventManager : MonoBehaviour {
 	private GUIText choice3;
 	private GUIText choice4;
 
+	private GUITexture choiceWindow1;
+	private GUITexture choiceWindow2;
+	private GUITexture choiceWindow3;
+	private GUITexture choiceWindow4;
+
+	public string highValueSceneName;
+	public string lowValueSceneName;
+	public int decisionValue;
+
+	public bool gameOverScene=false;
+
 	private int score=0;
 
 	private List<GUIText> choices;
+	private List<GUITexture> choiceWindows;
 
 	public List<EventText> eventTexts;
 
-	private int textPos =0;
+	private int textPos =-1;
 	// Use this for initialization
 	void Start () {
 		description = GameObject.FindGameObjectWithTag("text").GetComponent<GUIText>();
+
 		choice1 = GameObject.FindGameObjectWithTag("choice1").GetComponent<GUIText>();
 		choice2 = GameObject.FindGameObjectWithTag("choice2").GetComponent<GUIText>();
 		choice3 = GameObject.FindGameObjectWithTag("choice3").GetComponent<GUIText>();
 		choice4 = GameObject.FindGameObjectWithTag("choice4").GetComponent<GUIText>();
 
-		description.text=eventTexts[textPos].descriptionText;
+		choiceWindow1 = GameObject.FindGameObjectWithTag("choiceOverlay1").GetComponent<GUITexture>();
+		choiceWindow2 = GameObject.FindGameObjectWithTag("choiceOverlay2").GetComponent<GUITexture>();
+		choiceWindow3 = GameObject.FindGameObjectWithTag("choiceOverlay3").GetComponent<GUITexture>();
+		choiceWindow4 = GameObject.FindGameObjectWithTag("choiceOverlay4").GetComponent<GUITexture>();
+
+		description.text="";
 		choice1.text="";
 		choice2.text="";
 		choice3.text="";
@@ -41,6 +56,20 @@ public class EventManager : MonoBehaviour {
 		choices.Add(choice2);
 		choices.Add(choice3);
 		choices.Add(choice4);
+
+		choiceWindows = new List<GUITexture>();
+
+		choiceWindows.Add(choiceWindow1);
+		choiceWindows.Add(choiceWindow2);
+		choiceWindows.Add(choiceWindow3);
+		choiceWindows.Add(choiceWindow4);
+
+		choiceWindow1.enabled=false;
+		choiceWindow2.enabled=false;
+		choiceWindow3.enabled=false;
+		choiceWindow4.enabled=false;
+
+		UpdateTextsAndChoices();
 
 	}
 
@@ -57,12 +86,18 @@ public class EventManager : MonoBehaviour {
 			if(gotChoices()){
 				for(int i=0;i<eventTexts[textPos].choices.Count;i++){
 					choices[i].text=eventTexts[textPos].choices[i].choiceText;
+					choiceWindows[i].enabled=true;
 				}
 			} else {
 				choice1.text="";
 				choice2.text="";
 				choice3.text="";
 				choice4.text="";
+
+				choiceWindow1.enabled=false;
+				choiceWindow2.enabled=false;
+				choiceWindow3.enabled=false;
+				choiceWindow4.enabled=false;
 			}
 		} else {
 			Debug.Log ("FINISH!");
@@ -72,7 +107,26 @@ public class EventManager : MonoBehaviour {
 			choice2.text="";
 			choice3.text="";
 			choice4.text="";
+
+			choiceWindow1.enabled=false;
+			choiceWindow2.enabled=false;
+			choiceWindow3.enabled=false;
+			choiceWindow4.enabled=false;
+
+			Invoke("LoadNewScene",0f);
 		}
+	}
+
+	public void LoadNewScene(){
+		if(gameOverScene){
+			GameObject.FindGameObjectWithTag("SceneManager").GetComponent<SceneManager>().GoBackInTime();
+		} else {
+			if(score>decisionValue){
+				Application.LoadLevel(highValueSceneName);
+			} else {
+				Application.LoadLevel(lowValueSceneName);
+			}
+		}			
 	}
 
 	private bool gotChoices(){
