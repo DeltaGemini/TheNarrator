@@ -17,7 +17,7 @@ public class SceneManager : MonoBehaviour {
 		} 
 	}
 	
-	public List<string> scenes;
+	private List<string> scenes;
 	public int pos=-1;
 
 	// Use this for initialization

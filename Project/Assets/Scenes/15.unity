@@ -175,6 +175,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 405347600}
   - 131: {fileID: 405347601}
+  - 114: {fileID: 405347602}
   m_Layer: 0
   m_Name: ChoiceOverlay1
   m_TagString: choiceOverlay1
@@ -189,8 +190,8 @@ Transform:
   m_PrefabInternal: {fileID: 1972712863}
   m_GameObject: {fileID: 405347599}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .245000005, y: .449999988, z: -1}
-  m_LocalScale: {x: .439999998, y: .0900000036, z: 1}
+  m_LocalPosition: {x: .246999994, y: .449999988, z: -1}
+  m_LocalScale: {x: .444999993, y: .0900000036, z: 1}
   m_Children: []
   m_Father: {fileID: 1372230544}
 --- !u!131 &405347601
@@ -213,6 +214,19 @@ GUITexture:
   m_RightBorder: 0
   m_TopBorder: 0
   m_BottomBorder: 0
+--- !u!114 &405347602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400014, guid: 9dae4f7d047f67c46a54ae5384865fa0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1972712863}
+  m_GameObject: {fileID: 405347599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  choice: 0
 --- !u!1 &609865545
 GameObject:
   m_ObjectHideFlags: 0
@@ -248,7 +262,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1972712863}
   m_GameObject: {fileID: 609865545}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -287,6 +301,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 847669408}
   - 131: {fileID: 847669409}
+  - 114: {fileID: 847669410}
   m_Layer: 0
   m_Name: ChoiceOverlay4
   m_TagString: choiceOverlay4
@@ -301,8 +316,8 @@ Transform:
   m_PrefabInternal: {fileID: 1972712863}
   m_GameObject: {fileID: 847669407}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .245000005, y: .0799999982, z: -1}
-  m_LocalScale: {x: .439999998, y: .0900000036, z: 1}
+  m_LocalPosition: {x: .246999994, y: .0799999982, z: -2}
+  m_LocalScale: {x: .444999993, y: .0900000036, z: 1}
   m_Children: []
   m_Father: {fileID: 1372230544}
 --- !u!131 &847669409
@@ -325,6 +340,19 @@ GUITexture:
   m_RightBorder: 0
   m_TopBorder: 0
   m_BottomBorder: 0
+--- !u!114 &847669410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 9dae4f7d047f67c46a54ae5384865fa0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1972712863}
+  m_GameObject: {fileID: 847669407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  choice: 4
 --- !u!1 &936755969
 GameObject:
   m_ObjectHideFlags: 0
@@ -360,7 +388,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1972712863}
   m_GameObject: {fileID: 936755969}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -399,6 +427,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1000161674}
   - 131: {fileID: 1000161675}
+  - 114: {fileID: 1000161676}
   m_Layer: 0
   m_Name: ChoiceOverlay2
   m_TagString: choiceOverlay2
@@ -413,8 +442,8 @@ Transform:
   m_PrefabInternal: {fileID: 1972712863}
   m_GameObject: {fileID: 1000161673}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .245000005, y: .330000013, z: -1}
-  m_LocalScale: {x: .439999998, y: .0900000036, z: 1}
+  m_LocalPosition: {x: .246999994, y: .330000013, z: -2}
+  m_LocalScale: {x: .444999993, y: .0900000036, z: 1}
   m_Children: []
   m_Father: {fileID: 1372230544}
 --- !u!131 &1000161675
@@ -437,6 +466,19 @@ GUITexture:
   m_RightBorder: 0
   m_TopBorder: 0
   m_BottomBorder: 0
+--- !u!114 &1000161676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400012, guid: 9dae4f7d047f67c46a54ae5384865fa0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1972712863}
+  m_GameObject: {fileID: 1000161673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  choice: 1
 --- !u!1 &1289810069
 GameObject:
   m_ObjectHideFlags: 0
@@ -599,7 +641,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1972712863}
   m_GameObject: {fileID: 1322399156}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -674,6 +716,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1635134611}
   - 131: {fileID: 1635134610}
+  - 114: {fileID: 1635134612}
   m_Layer: 0
   m_Name: ChoiceOverlay3
   m_TagString: choiceOverlay3
@@ -708,10 +751,23 @@ Transform:
   m_PrefabInternal: {fileID: 1972712863}
   m_GameObject: {fileID: 1635134609}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .245000005, y: .200000003, z: -1}
-  m_LocalScale: {x: .439999998, y: .0900000036, z: 1}
+  m_LocalPosition: {x: .246999994, y: .200000003, z: -2}
+  m_LocalScale: {x: .444999993, y: .0900000036, z: 1}
   m_Children: []
   m_Father: {fileID: 1372230544}
+--- !u!114 &1635134612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400010, guid: 9dae4f7d047f67c46a54ae5384865fa0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1972712863}
+  m_GameObject: {fileID: 1635134609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  choice: 3
 --- !u!1 &1806707237
 GameObject:
   m_ObjectHideFlags: 0
@@ -842,7 +898,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1972712863}
   m_GameObject: {fileID: 2033230616}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
