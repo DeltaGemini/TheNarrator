@@ -102,18 +102,59 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inGameGUI: {fileID: 11400000, guid: 3e8a502dae175fb498a81ea009ad1591, type: 2}
+  resultA: 
+  resultB: 
   highValueSceneName: 15
   lowValueSceneName: 16
   decisionValue: 10
   gameOverScene: 0
   eventTexts:
-  - descriptionText: "You've married for money.\r\nYour partner is rich and \r\nannoying.\r\n\r\nBesides,
-      you're broke, got\r\nno job, and they're treating\r\nyou badly."
+  - descriptionText: "Considering my pitiful situation and the unexpected wealth of
+      my new partner, the decision to get married was easy for me. \r\n\r\nAfter the
+      honeymoon phase, I began seeing the first downsides to this new arrangement.
+      After a few years, I felt like a prisoner in my home."
+    choices: []
+    timeUntilNextText: 0
+  - descriptionText: "My ways of contributing are limited, so most nights, like tonight,
+      I prepare dinner. But like every night, my partner still finds reasons to criticise
+      me. Especially when drunk, like so often these days. \r\n\r\n\u201CSame food
+      as every week, huh? I would expect you would at least learn how to make it taste
+      like actual food.\u201D"
     choices:
-    - choiceText: Kill
-      choiceValue: 20
-    - choiceText: Don't kill
-      choiceValue: 0
+    - choiceText: 'I count to ten and take some deep breaths. '
+      choiceValue: 1
+    - choiceText: "\u201CI am done with this, make your own dinner for all I care.\u201D"
+      choiceValue: 1
+    - choiceText: "\u201CWatch what you say. Don\u2019t push me over the line\u201D"
+      choiceValue: 5
+    - choiceText: "\u201C\u2026\u201D"
+      choiceValue: 5
+    timeUntilNextText: 0
+  - descriptionText: "My spouse looks at me with disgust and slurs: \u201CYou a natural
+      born loser. You have no dignity at all. Remind we why I feed you every day.
+      You are useless.\u201D"
+    choices:
+    - choiceText: "\"This conversation is over.\u201D"
+      choiceValue: 1
+    - choiceText: "\u201CLook. You\u2019ve had too much to drink.\u201D"
+      choiceValue: 1
+    - choiceText: "\u201CThis is enough. I am warning you: get away from me!\u201C"
+      choiceValue: 5
+    - choiceText: I grab a glass and throw it against the wall.
+      choiceValue: 5
+    timeUntilNextText: 0
+  - descriptionText: "My entire body is shaking. My spouse is laughing: \u201CI will
+      call the police and tell them you were attacking me. I will make sure they will
+      put you away and never let you out again.\u201D I close my eyes."
+    choices:
+    - choiceText: "\u201C\u2026\u201D"
+      choiceValue: 5
+    - choiceText: I wait until the torture is over.
+      choiceValue: 1
+    - choiceText: 'I feel my emotions over flooding and I let them take over. '
+      choiceValue: 5
+    - choiceText: 'I start laughing.  '
+      choiceValue: 1
     timeUntilNextText: 0
 --- !u!4 &115110993
 Transform:
@@ -161,7 +202,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1979801471}
   m_GameObject: {fileID: 124818214}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -174,7 +215,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 1979801471}
   m_GameObject: {fileID: 124818214}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -306,7 +347,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1979801471}
   m_GameObject: {fileID: 333451495}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -319,7 +360,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 1979801471}
   m_GameObject: {fileID: 333451495}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -371,7 +412,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 1979801471}
   m_GameObject: {fileID: 385127431}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -391,7 +432,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1979801471}
   m_GameObject: {fileID: 385127431}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -432,7 +473,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1979801471}
   m_GameObject: {fileID: 436840188}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -445,7 +486,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 1979801471}
   m_GameObject: {fileID: 436840188}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -590,7 +631,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 1979801471}
   m_GameObject: {fileID: 944564416}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -610,7 +651,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1979801471}
   m_GameObject: {fileID: 944564416}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -691,7 +732,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1979801471}
   m_GameObject: {fileID: 1140654139}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -704,7 +745,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 1979801471}
   m_GameObject: {fileID: 1140654139}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -767,7 +808,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 1979801471}
   m_GameObject: {fileID: 1145745937}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -787,12 +828,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1979801471}
   m_GameObject: {fileID: 1145745937}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  choice: 4
+  choice: 3
 --- !u!1 &1289810069
 GameObject:
   m_ObjectHideFlags: 0
@@ -908,7 +949,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 1979801471}
   m_GameObject: {fileID: 1365540945}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -928,12 +969,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1979801471}
   m_GameObject: {fileID: 1365540945}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  choice: 3
+  choice: 2
 --- !u!1001 &1979801471
 Prefab:
   m_ObjectHideFlags: 0
