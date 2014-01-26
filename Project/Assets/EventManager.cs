@@ -25,6 +25,7 @@ public class EventManager : MonoBehaviour
 		private List<GUITexture> choiceWindows;
 		public List<EventText> eventTexts;
 		private int textPos = -1;
+		private bool showedLastText=false;
 		// Use this for initialization
 		void Start ()
 		{
@@ -84,7 +85,7 @@ public class EventManager : MonoBehaviour
 						if (gotChoices ()) {
 								for (int i=0; i<eventTexts[textPos].choices.Count; i++) {
 										choices [i].text = eventTexts [textPos].choices [i].choiceText;
-										choiceWindows [i].enabled = true;
+										//choiceWindows [i].enabled = true;
 								}
 						} else {
 								choice1.text = "";
@@ -97,44 +98,46 @@ public class EventManager : MonoBehaviour
 								choiceWindow3.enabled = false;
 								choiceWindow4.enabled = false;
 						}
-				} else if (score > 0) {
+				} else if(!showedLastText){
+				Debug.Log ("SHOWING LAST TEXT!");
+				showedLastText=true;
+				description.text = "";
+				choice1.text = "";
+				choice2.text = "";
+				choice3.text = "";
+				choice4.text = "";
+				
+				choiceWindow1.enabled = false;
+				choiceWindow2.enabled = false;
+				choiceWindow3.enabled = false;
+				choiceWindow4.enabled = false;
 
-						description.text = "";
-						choice1.text = "";
-						choice2.text = "";
-						choice3.text = "";
-						choice4.text = "";
-
-						choiceWindow1.enabled = false;
-						choiceWindow2.enabled = false;
-						choiceWindow3.enabled = false;
-						choiceWindow4.enabled = false;
-
-						if (score >= decisionValue) {
-								description.text = resultA;
-						} else if (score > 0) {
-								description.text = resultB;
-						}
-			score = 0;
-				} else if(score = 0){
-						Debug.Log ("FINISH!");
-			
-						description.text = "";
-						choice1.text = "";
-						choice2.text = "";
-						choice3.text = "";
-						choice4.text = "";
-			
-						choiceWindow1.enabled = false;
-						choiceWindow2.enabled = false;
-						choiceWindow3.enabled = false;
-						choiceWindow4.enabled = false;
-			
-						GameObject.FindGameObjectWithTag ("fadeInOut").GetComponent<FadeInOut> ().Fade (false);
-						Invoke ("LoadNewScene", GameObject.FindGameObjectWithTag ("fadeInOut").GetComponent<FadeInOut> ().fadeTime);
-
+				if(score>=decisionValue){
+					description.text = resultA;
+				} else {
+					description.text = resultB;				
 
 				}
+		} else {
+			AfterLastText();
+		}
+	}
+
+		public void AfterLastText(){
+		description.text = "";
+		choice1.text = "";
+		choice2.text = "";
+		choice3.text = "";
+		choice4.text = "";
+		
+		choiceWindow1.enabled = false;
+		choiceWindow2.enabled = false;
+		choiceWindow3.enabled = false;
+		choiceWindow4.enabled = false;
+		
+		GameObject.FindGameObjectWithTag ("fadeInOut").GetComponent<FadeInOut> ().Fade (false);
+		Invoke ("LoadNewScene", GameObject.FindGameObjectWithTag ("fadeInOut").GetComponent<FadeInOut> ().fadeTime);
+
 		}
 
 		public void LoadNewScene ()
@@ -168,10 +171,29 @@ public class EventManager : MonoBehaviour
 				GUI.skin = inGameGUI;
 
 				GUI.Label (new Rect (35, 30, 500, 300), description.text);
-				/*
-		if (GUI.Button (new Rect (35, 300, 500, 150), choice1.text)) {
-			//Do nothing
-			GameObject.FindGameObjectWithTag ("EventManager").GetComponent<EventManager> ().selectChoice (0);
-		}*/
+				
+				if(choice1.text!=null && choice1.text!=""){
+					if (GUI.Button (new Rect (35, 500, 500, 150), choice1.text)) {					
+						GameObject.FindGameObjectWithTag ("EventManager").GetComponent<EventManager> ().selectChoice (0);
+					}
+				}
+
+				if(choice2.text!=null && choice2.text!=""){
+					if (GUI.Button (new Rect (35, 400, 500, 150), choice2.text)) {					
+						GameObject.FindGameObjectWithTag ("EventManager").GetComponent<EventManager> ().selectChoice (1);
+					}
+				}
+
+				if(choice3.text!=null && choice3.text!=""){
+					if (GUI.Button (new Rect (35, 300, 500, 150), choice3.text)) {					
+						GameObject.FindGameObjectWithTag ("EventManager").GetComponent<EventManager> ().selectChoice (2);
+					}
+				}
+
+				if(choice4.text!=null && choice4.text!=""){
+					if (GUI.Button (new Rect (35, 200, 500, 150), choice4.text)) {					
+						GameObject.FindGameObjectWithTag ("EventManager").GetComponent<EventManager> ().selectChoice (3);
+					}
+				}
 		}
 }
