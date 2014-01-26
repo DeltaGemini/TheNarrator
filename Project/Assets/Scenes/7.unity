@@ -102,18 +102,53 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inGameGUI: {fileID: 11400000, guid: 3e8a502dae175fb498a81ea009ad1591, type: 2}
+  resultA: 'There is a bond that cannot be denied by time or distance. We are made
+    for each other. We are giving it another shot. '
+  resultB: I never expected this, but I feel in love with a colleague. It might be
+    a flirtation or something serious. The only way to know for sure is to find out.
   highValueSceneName: 10
   lowValueSceneName: 11
   decisionValue: 10
   gameOverScene: 0
   eventTexts:
-  - descriptionText: "You're single, but\r\nyou got a good job.\r\nYou feel boring
-      and\r\nlonely. \r\n\r\nYou meet somebody \r\nnew."
+  - descriptionText: 'I was focused, I worked hard, I had goals. I felt like I was
+      doing the right thing, focusing on my career. After all, what else was I going
+      to spend my time on. There was no special someone in my life, and I had no hobbies.
+      I was a bit bored, actually. '
+    choices: []
+    timeUntilNextText: 0
+  - descriptionText: 'But life had its upsides. I met a lot of interesting people.
+      I had tons of fun. '
     choices:
-    - choiceText: Kill
-      choiceValue: 20
-    - choiceText: Don't kill
-      choiceValue: 0
+    - choiceText: "I\u2019m keeping a professional distance. "
+      choiceValue: 5
+    - choiceText: 'I make friends wherever I go. '
+      choiceValue: 5
+    - choiceText: 'Sometimes I go the local pub with my co-workers. '
+      choiceValue: 1
+    timeUntilNextText: 0
+  - descriptionText: "The new one on the team seemed strangely familiar. Could it
+      be \u2026 ? My childhood love. My head is spinning. Am I reminiscing, regretting,
+      or falling in love again? "
+    choices:
+    - choiceText: 'I ask my co-workers for advice. '
+      choiceValue: 1
+    - choiceText: "I leave it be. It\u2019s over and long gone. "
+      choiceValue: 1
+    - choiceText: 'I am going to find out. '
+      choiceValue: 5
+    timeUntilNextText: 0
+  - descriptionText: 'Then one of the colleges invited everybody to their birthday
+      party. It was a wild party, one of those were anything was possible. '
+    choices:
+    - choiceText: 'I ask my crush for a dance. '
+      choiceValue: 5
+    - choiceText: Catch up with your childhood crush.
+      choiceValue: 5
+    - choiceText: 'I flirt with a friend to see what happens. '
+      choiceValue: 1
+    - choiceText: 'I do nothing. '
+      choiceValue: 1
     timeUntilNextText: 0
 --- !u!4 &115110993
 Transform:
@@ -161,7 +196,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1654103693}
   m_GameObject: {fileID: 124818214}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -174,7 +209,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 1654103693}
   m_GameObject: {fileID: 124818214}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -263,7 +298,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1654103693}
   m_GameObject: {fileID: 333451495}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -276,7 +311,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 1654103693}
   m_GameObject: {fileID: 333451495}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -328,7 +363,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 1654103693}
   m_GameObject: {fileID: 385127431}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -348,7 +383,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1654103693}
   m_GameObject: {fileID: 385127431}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -389,7 +424,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1654103693}
   m_GameObject: {fileID: 436840188}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -402,7 +437,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 1654103693}
   m_GameObject: {fileID: 436840188}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -547,7 +582,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 1654103693}
   m_GameObject: {fileID: 944564416}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -567,7 +602,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1654103693}
   m_GameObject: {fileID: 944564416}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -648,7 +683,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1654103693}
   m_GameObject: {fileID: 1140654139}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -661,7 +696,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 1654103693}
   m_GameObject: {fileID: 1140654139}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -724,7 +759,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 1654103693}
   m_GameObject: {fileID: 1145745937}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -744,12 +779,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1654103693}
   m_GameObject: {fileID: 1145745937}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  choice: 4
+  choice: 3
 --- !u!1 &1289810069
 GameObject:
   m_ObjectHideFlags: 0
@@ -865,7 +900,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 1654103693}
   m_GameObject: {fileID: 1365540945}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -885,12 +920,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1654103693}
   m_GameObject: {fileID: 1365540945}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  choice: 3
+  choice: 2
 --- !u!1001 &1654103693
 Prefab:
   m_ObjectHideFlags: 0
