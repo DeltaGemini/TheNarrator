@@ -1,0 +1,35 @@
+Initialize engine version: 4.3.3f1 (c8ca9b6b9936)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.3221]
+    Renderer: Intel(R) HD Graphics 3000
+    Vendor:   Intel
+    VRAM:     848 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=1 INTZ=1 RAWZ=0 NULL=1 RESZ=1 SlowINTZ=0
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Daryl\Documents\GitHub\TheNarrator\Builds\01_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Daryl\Documents\GitHub\TheNarrator\Builds\01_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Daryl\Documents\GitHub\TheNarrator\Builds\01_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Daryl\Documents\GitHub\TheNarrator\Builds\01_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+- Completed reload, in  0.068 seconds
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+UnloadTime: 0.800535 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 158.
+Total: 2.107563 ms (FindLiveObjects: 0.039000 ms CreateObjectMapping: 0.023092 ms MarkObjects: 0.361267 ms  DeleteObjects: 0.022066 ms)
+
+UnloadTime: 0.738955 ms
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 169.
+Total: 2.028022 ms (FindLiveObjects: 0.029763 ms CreateObjectMapping: 0.022066 ms MarkObjects: 0.398215 ms  DeleteObjects: 0.020013 ms)
+
+UnloadTime: 0.743061 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 167.
+Total: 1.983377 ms (FindLiveObjects: 0.025658 ms CreateObjectMapping: 0.022579 ms MarkObjects: 0.442860 ms  DeleteObjects: 0.008723 ms)
+
