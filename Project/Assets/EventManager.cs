@@ -145,9 +145,13 @@ public class EventManager : MonoBehaviour
 		}
 
 		public void LoadNewScene ()
-		{
-				if (gameOverScene) {
+		{ 
+				if (gameOverScene) {	
+						if(score==20){
+				Application.LoadLevel("2");
+			} else {
 						GameObject.FindGameObjectWithTag ("SceneManager").GetComponent<SceneManager> ().GoBackInTime ();
+			}
 				} else {
 						if (score >= decisionValue) {
 								Application.LoadLevel (highValueSceneName);
