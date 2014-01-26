@@ -98,7 +98,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 685582082}
   m_GameObject: {fileID: 109472445}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -148,7 +148,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 115110993}
   - 114: {fileID: 115110992}
-  - 82: {fileID: 115110994}
   m_Layer: 0
   m_Name: EventManager
   m_TagString: EventManager
@@ -168,17 +167,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inGameGUI: {fileID: 11400000, guid: 3e8a502dae175fb498a81ea009ad1591, type: 2}
+  resultA: 
+  resultB: 
   highValueSceneName: 18
   lowValueSceneName: 18
   decisionValue: 0
   gameOverScene: 0
   eventTexts:
-  - descriptionText: "Job is going badly...\r\nand you're kind of broke.\r\n"
-    choices:
-    - choiceText: Kill
-      choiceValue: 0
-    - choiceText: Not Kill
-      choiceValue: 0
+  - descriptionText: "Many years of marriage have taught me very little, most important
+      of all I learned that some choices, choices which seem so reasonable at the
+      time, you will regret forever. \r\n\r\nI am married, but honestly, I\u2019d
+      rather not be. We\u2019re making each other more miserable every day and you
+      cannot help but wonder: "
+    choices: []
+    timeUntilNextText: 0
+  - descriptionText: What if I could go back in time and change what happened?
+    choices: []
     timeUntilNextText: 0
 --- !u!4 &115110993
 Transform:
@@ -191,64 +195,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!82 &115110994
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 115110991}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_audioClip: {fileID: 8300000, guid: 16eff6e506e15b2478e9856c011d0f80, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 1
-  Mute: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
 --- !u!1 &322370410
 GameObject:
   m_ObjectHideFlags: 0
@@ -331,7 +277,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 685582082}
   m_GameObject: {fileID: 385637049}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -351,7 +297,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 685582082}
   m_GameObject: {fileID: 385637049}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -392,7 +338,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 685582082}
   m_GameObject: {fileID: 548883277}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -412,12 +358,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 685582082}
   m_GameObject: {fileID: 548883277}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  choice: 3
+  choice: 2
 --- !u!1001 &685582082
 Prefab:
   m_ObjectHideFlags: 0
@@ -525,7 +471,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 685582082}
   m_GameObject: {fileID: 742047902}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -545,7 +491,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 685582082}
   m_GameObject: {fileID: 742047902}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -575,7 +521,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 685582082}
   m_GameObject: {fileID: 1201788235}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -691,7 +637,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 685582082}
   m_GameObject: {fileID: 1258215398}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -836,7 +782,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 685582082}
   m_GameObject: {fileID: 1507588740}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -1008,7 +954,7 @@ AudioSource:
   m_GameObject: {fileID: 1704078517}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 16eff6e506e15b2478e9856c011d0f80, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1125,7 +1071,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 685582082}
   m_GameObject: {fileID: 2078687755}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -1156,9 +1102,9 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 685582082}
   m_GameObject: {fileID: 2078687755}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  choice: 4
+  choice: 3
