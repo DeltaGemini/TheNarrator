@@ -101,13 +101,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2e178d27b1732549b175cc7faf6b3ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inGameGUI: {fileID: 11400000, guid: 3e8a502dae175fb498a81ea009ad1591, type: 2}
+  resultA: 
+  resultB: 
   highValueSceneName: 0
   lowValueSceneName: 0
   decisionValue: 0
   gameOverScene: 1
   eventTexts:
-  - descriptionText: "Imagine you could go back and change \r\nthe decisions that
-      led you here.\r\n\r\nWould you do it?\r\n"
+  - descriptionText: "Imagine you could go back and change the decisions that led
+      you here.\r\n\r\nWould you do it?\r\n"
     choices:
     - choiceText: No
       choiceValue: 20
@@ -160,7 +163,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 511756839}
   m_GameObject: {fileID: 371379588}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -180,7 +183,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 511756839}
   m_GameObject: {fileID: 371379588}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -221,7 +224,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 511756839}
   m_GameObject: {fileID: 415862727}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -241,7 +244,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 511756839}
   m_GameObject: {fileID: 415862727}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -328,7 +331,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 511756839}
   m_GameObject: {fileID: 508869854}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -348,7 +351,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 511756839}
   m_GameObject: {fileID: 508869854}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -473,7 +476,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 511756839}
   m_GameObject: {fileID: 609865545}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -525,7 +528,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 511756839}
   m_GameObject: {fileID: 847669407}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -545,7 +548,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 511756839}
   m_GameObject: {fileID: 847669407}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -598,7 +601,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 511756839}
   m_GameObject: {fileID: 936755969}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -789,7 +792,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 511756839}
   m_GameObject: {fileID: 1322399156}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -959,7 +962,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 511756839}
   m_GameObject: {fileID: 1806707237}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -969,7 +972,7 @@ GUIText:
   m_TabSize: 4
   m_Font: {fileID: 12800000, guid: 2e828161615a4124b82575b8a59eea94, type: 3}
   m_Material: {fileID: 0}
-  m_FontSize: 25
+  m_FontSize: 18
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
@@ -1023,7 +1026,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 511756839}
   m_GameObject: {fileID: 2033230616}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0

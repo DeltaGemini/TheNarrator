@@ -35,8 +35,10 @@ public class SceneManager : MonoBehaviour {
 	}
 
 	public void GoBackInTime(){
-		pos++;
-		Application.LoadLevel(scenes[pos]);
+		if(pos<scenes.Count-1){
+			pos++;
+			Application.LoadLevel(scenes[pos]);
+		}
 	}
 
 }
