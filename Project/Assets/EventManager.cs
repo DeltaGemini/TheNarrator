@@ -173,27 +173,28 @@ public class EventManager : MonoBehaviour
 				GUI.Label (new Rect (35, 30, 500, 300), description.text);
 				
 				if(choice1.text!=null && choice1.text!=""){
-					if (GUI.Button (new Rect (35, 500, 500, 150), choice1.text)) {					
+					if (GUI.Button (new Rect (35, 310, 310, 150), choice1.text)) {					
 						GameObject.FindGameObjectWithTag ("EventManager").GetComponent<EventManager> ().selectChoice (0);
 					}
 				}
 
 				if(choice2.text!=null && choice2.text!=""){
-					if (GUI.Button (new Rect (35, 400, 500, 150), choice2.text)) {					
+					if (GUI.Button (new Rect (35, 380, 500, 150), choice2.text)) {					
 						GameObject.FindGameObjectWithTag ("EventManager").GetComponent<EventManager> ().selectChoice (1);
 					}
 				}
 
 				if(choice3.text!=null && choice3.text!=""){
-					if (GUI.Button (new Rect (35, 300, 500, 150), choice3.text)) {					
+					if (GUI.Button (new Rect (35, 450, 500, 150), choice3.text)) {					
 						GameObject.FindGameObjectWithTag ("EventManager").GetComponent<EventManager> ().selectChoice (2);
 					}
 				}
 
 				if(choice4.text!=null && choice4.text!=""){
-					if (GUI.Button (new Rect (35, 200, 500, 150), choice4.text)) {					
+					if (GUI.Button (new Rect (35, 520, 500, 150), choice4.text)) {					
 						GameObject.FindGameObjectWithTag ("EventManager").GetComponent<EventManager> ().selectChoice (3);
 					}
 				}
 		}
 }
+	
