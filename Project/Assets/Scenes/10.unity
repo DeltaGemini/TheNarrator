@@ -102,18 +102,50 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inGameGUI: {fileID: 11400000, guid: 3e8a502dae175fb498a81ea009ad1591, type: 2}
+  resultA: There was no way of saving this situation. We filed for a divorce and I
+    fought for every last penny. What a pitiful consolation prize for my humiliation.
+  resultB: Enraged and beside myself I start a struggle. I lost all control over my
+    senses. When I come to, you are on the floor, blood everywhere. I stare down at
+    my dripping hands and blackout.
   highValueSceneName: 14
   lowValueSceneName: 15
   decisionValue: 10
   gameOverScene: 0
   eventTexts:
-  - descriptionText: "You're single, but\r\nyou got a good job.\r\nYou feel boring
-      and\r\nlonely. \r\n\r\nYou meet somebody \r\nnew."
+  - descriptionText: I love my marriage. I love my job. I love my life. I feel like
+      I made all the right choices, or I must be very lucky. In any case, I feel blessed.
+    choices: []
+    timeUntilNextText: 0
+  - descriptionText: I am preparing dinner, as my spouse emerges from the bedroom
+      with several pieces of luggage and a serious expression on their face.
     choices:
-    - choiceText: Kill
-      choiceValue: 20
-    - choiceText: Don't kill
-      choiceValue: 0
+    - choiceText: The only thing I feel my heart beating in my throat.
+      choiceValue: 1
+    - choiceText: I put down the knife and towel and take a deep breath.
+      choiceValue: 5
+    - choiceText: I do nothing.
+      choiceValue: 1
+    timeUntilNextText: 0
+  - descriptionText: My spouse confesses under tears to an affair and blames my absence
+      from home for their loneliness
+    choices:
+    - choiceText: "\u201CI am the one to blame for your infidelity?!\u201D"
+      choiceValue: 5
+    - choiceText: "\u201CHow could you do this to me?!\u201D"
+      choiceValue: 1
+    - choiceText: "\u201CStop talking. Now\u201D"
+      choiceValue: 5
+    timeUntilNextText: 0
+  - descriptionText: I feel rage, desperation and the humiliating feeling of betrayal
+      creeping up in me. My partner approaches me in an attempt to embrace me but
+      all I can feel is disgust.
+    choices:
+    - choiceText: "\u201CGet out of here and never come back!\u201D"
+      choiceValue: 5
+    - choiceText: I push them away from me.
+      choiceValue: 1
+    - choiceText: "\u201CI wish I had cheated on you when I had the chance.\u201D"
+      choiceValue: 5
     timeUntilNextText: 0
 --- !u!4 &115110993
 Transform:
@@ -174,7 +206,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 124818214}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -276,7 +308,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 333451495}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -328,7 +360,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 385127431}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -348,7 +380,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 385127431}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -402,7 +434,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 436840188}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -607,7 +639,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 944564416}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -627,7 +659,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 944564416}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -721,7 +753,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 1140654139}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -784,7 +816,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 1145745937}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -804,12 +836,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 1145745937}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  choice: 4
+  choice: 3
 --- !u!1 &1289810069
 GameObject:
   m_ObjectHideFlags: 0
@@ -925,7 +957,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 1365540945}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -945,12 +977,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 1365540945}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  choice: 3
+  choice: 2
 --- !u!1 &1728663966
 GameObject:
   m_ObjectHideFlags: 0

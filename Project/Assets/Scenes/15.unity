@@ -102,12 +102,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inGameGUI: {fileID: 11400000, guid: 3e8a502dae175fb498a81ea009ad1591, type: 2}
+  resultA: 
+  resultB: 
   highValueSceneName: 18
   lowValueSceneName: 18
   decisionValue: 0
   gameOverScene: 0
   eventTexts:
-  - descriptionText: "Guilty conscience.\r\nYou're a murderer."
+  - descriptionText: "The things I did in blind rage got me imprisoned for manslaughter.
+      Everyday I sit on my bunk bed, my heavy head in my hands and ponder about the
+      choice I made and what I have turned into. I am ridden with guilt, a monster
+      worse than any horror movie could depict.\r\n\r\nEvery day I wonder: What if
+      just you could go back in time and change what I did?\r\n"
     choices: []
     timeUntilNextText: 0
 --- !u!4 &115110993
@@ -202,7 +208,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 1972712863}
   m_GameObject: {fileID: 405347599}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -222,7 +228,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1972712863}
   m_GameObject: {fileID: 405347599}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -263,7 +269,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1972712863}
   m_GameObject: {fileID: 609865545}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -276,7 +282,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 1972712863}
   m_GameObject: {fileID: 609865545}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -328,7 +334,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 1972712863}
   m_GameObject: {fileID: 847669407}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -348,12 +354,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1972712863}
   m_GameObject: {fileID: 847669407}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  choice: 4
+  choice: 3
 --- !u!1 &936755969
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,7 +395,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1972712863}
   m_GameObject: {fileID: 936755969}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -402,7 +408,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 1972712863}
   m_GameObject: {fileID: 936755969}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -454,7 +460,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 1972712863}
   m_GameObject: {fileID: 1000161673}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -474,7 +480,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1972712863}
   m_GameObject: {fileID: 1000161673}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -642,7 +648,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1972712863}
   m_GameObject: {fileID: 1322399156}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -655,7 +661,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 1972712863}
   m_GameObject: {fileID: 1322399156}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -733,7 +739,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 1972712863}
   m_GameObject: {fileID: 1635134609}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -764,12 +770,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1972712863}
   m_GameObject: {fileID: 1635134609}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  choice: 3
+  choice: 2
 --- !u!1 &1806707237
 GameObject:
   m_ObjectHideFlags: 0
@@ -943,7 +949,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1972712863}
   m_GameObject: {fileID: 2033230616}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -956,7 +962,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 1972712863}
   m_GameObject: {fileID: 2033230616}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0

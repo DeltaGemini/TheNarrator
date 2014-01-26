@@ -102,18 +102,63 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inGameGUI: {fileID: 11400000, guid: 3e8a502dae175fb498a81ea009ad1591, type: 2}
+  resultA: "My partner understands that I am a victim of my addiction and and that
+    I\u2019m trying to get better. I sign up for detox, rehabilitation and start going
+    to A.A. meetings. I have begun hating myself these last years and want to change."
+  resultB: As much as I am using my partner, they are using me. I feel no guilt for
+    my actions, nor do I see any motivations to change. In the end, everybody gets
+    what they deserve.
   highValueSceneName: 16
   lowValueSceneName: 17
   decisionValue: 10
   gameOverScene: 0
   eventTexts:
-  - descriptionText: "You're single, but\r\nyou got a good job.\r\nYou feel boring
-      and\r\nlonely. \r\n\r\nYou meet somebody \r\nnew."
+  - descriptionText: "Considering my pitiful situation and the unexpected wealth of
+      my new partner, the decision to get married was easy for me. Years of alcohol
+      abuse and regrets have turned you into a bitter person. If it wasn\u2019t for
+      the money, you would have left long ago."
+    choices: []
+    timeUntilNextText: 0
+  - descriptionText: You are having visit from some friends of yours. Your partner
+      have not cleaned up the house before they arrived and after they leave you confront
+      her. What will you tell her?
     choices:
-    - choiceText: Kill
-      choiceValue: 20
-    - choiceText: Don't kill
-      choiceValue: 0
+    - choiceText: "\u201CListen homo imbecilicus, how many times should I tell you
+        fat-eared mongrel that you NEED cleaning up when I say it!\u201D"
+      choiceValue: 5
+    - choiceText: "\u201CWhy did you not clean up as I asked for? My friends deserve
+        nice treatment.\u201D"
+      choiceValue: 1
+    - choiceText: "All the cakes and beers left from the party you deliberately spill
+        out all over the floor. \u201CNow my incompetent half, go and clean this up.
+        Maybe you will then learn to understand me the hard way.\u201D"
+      choiceValue: 5
+    timeUntilNextText: 0
+  - descriptionText: "Since my partner started monitoring my spendings, I had to come
+      up with more creative ways of obtaining my \u201Cmedicine\u201D. When my spouse
+      discovers I used their credit card, they felt betrayed: \u201CYou stole from
+      me?\u201D"
+    choices:
+    - choiceText: "\u201CI\u2019m sorry. I will pay you back.\u201D"
+      choiceValue: 5
+    - choiceText: "\u201CI could get you arrested for fraud.\u201D"
+      choiceValue: 1
+    - choiceText: "\u201CI took the money instead of the love you owe me.\u201D"
+      choiceValue: 1
+    - choiceText: "\u201C\u2026\u201D"
+      choiceValue: 5
+    timeUntilNextText: 0
+  - descriptionText: After a few weeks, some old friends I borrowed money from, find
+      me and start harassing me. I needed money, as much and fast as I could get.
+    choices:
+    - choiceText: I beg my partner for more money.
+      choiceValue: 5
+    - choiceText: I steal another one of their credit cards.
+      choiceValue: 1
+    - choiceText: I forge their last will to make me the sole heir.
+      choiceValue: 1
+    - choiceText: "I won\u2019t steal from my spouse anymore."
+      choiceValue: 5
     timeUntilNextText: 0
 --- !u!4 &115110993
 Transform:
@@ -174,7 +219,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 124818214}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -276,7 +321,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 333451495}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -328,7 +373,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 385127431}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -348,7 +393,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 385127431}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -402,7 +447,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 436840188}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -607,7 +652,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 944564416}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -627,7 +672,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 944564416}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -721,7 +766,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 1140654139}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -784,7 +829,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 1145745937}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -804,12 +849,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 1145745937}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  choice: 4
+  choice: 3
 --- !u!1 &1262332592
 GameObject:
   m_ObjectHideFlags: 0
@@ -968,7 +1013,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 1365540945}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -988,9 +1033,9 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 1365540945}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  choice: 3
+  choice: 2

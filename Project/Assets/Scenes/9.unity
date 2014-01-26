@@ -102,18 +102,60 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inGameGUI: {fileID: 11400000, guid: 3e8a502dae175fb498a81ea009ad1591, type: 2}
+  resultA: My limited options leave me paralysed. I feel numb and empty. When my date
+    proposes to me, I hope for the best and say yes. This could be just the thing
+    to snap me out of this stasis.
+  resultB: Slowly, creepily, the glass of wine night for night has turned into a non-optional
+    security blanket. At this point I am far from seeing it clearly, but here is where
+    I missed the chance to get back on the wagon.
   highValueSceneName: 13
   lowValueSceneName: 14
   decisionValue: 10
   gameOverScene: 0
   eventTexts:
-  - descriptionText: "You're single, but\r\nyou got a good job.\r\nYou feel boring
-      and\r\nlonely. \r\n\r\nYou meet somebody \r\nnew."
+  - descriptionText: The loss of income hit me harder than I thought. I felt like
+      I had been getting along fine with my boss, but as it turned out, he had been
+      very unhappy with me. So much so, that his performance evaluation flagged me
+      as 'unhirable' for any job I applied for. This internship had turned into a
+      trap for my career.
+    choices: []
+    timeUntilNextText: 0
+  - descriptionText: This was a new low point in my life. The realisation hit me hard
+      and unexpected. Where I thought I had time and choice, I was suddenly left alone
     choices:
-    - choiceText: Kill
-      choiceValue: 20
-    - choiceText: Don't kill
-      choiceValue: 0
+    - choiceText: I call up an old friend to chat over a drink.
+      choiceValue: 1
+    - choiceText: "I\u2019m having a glass of wine to calm me down."
+      choiceValue: 1
+    - choiceText: I curl up in a ball and pity myself.
+      choiceValue: 5
+    - choiceText: I do nothing. I am nothing.
+      choiceValue: 5
+    timeUntilNextText: 0
+  - descriptionText: The more rejections I receive, the lower my self esteem sinks.
+      My friends tell me to go out and meet somebody new.
+    choices:
+    - choiceText: "I don\u2019t want to meet anyone."
+      choiceValue: 5
+    - choiceText: "I\u2019m a loser."
+      choiceValue: 5
+    - choiceText: I join my friends.
+      choiceValue: 1
+    - choiceText: I have a drink by myself.
+      choiceValue: 1
+    timeUntilNextText: 0
+  - descriptionText: Me friends are setting me up with someone. I have nothing better
+      to do, so why not spend some time together. I let them drag me out for a group
+      dinner.
+    choices:
+    - choiceText: "I\u2019m going through the motions."
+      choiceValue: 5
+    - choiceText: I feel inadequate and leave early.
+      choiceValue: 5
+    - choiceText: I have fun and stay up all night.
+      choiceValue: 1
+    - choiceText: I invite them over for drinks.
+      choiceValue: 1
     timeUntilNextText: 0
 --- !u!4 &115110993
 Transform:
@@ -174,7 +216,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 124818214}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -319,7 +361,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 333451495}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -371,7 +413,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 385127431}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -391,7 +433,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 385127431}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -445,7 +487,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 436840188}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -650,7 +692,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 944564416}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -670,7 +712,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 944564416}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -764,7 +806,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 1140654139}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -827,7 +869,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 1145745937}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -847,12 +889,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 1145745937}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  choice: 4
+  choice: 3
 --- !u!1 &1289810069
 GameObject:
   m_ObjectHideFlags: 0
@@ -968,7 +1010,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 1365540945}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -988,9 +1030,9 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 1365540945}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  choice: 3
+  choice: 2

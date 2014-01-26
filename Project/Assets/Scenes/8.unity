@@ -102,18 +102,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inGameGUI: {fileID: 11400000, guid: 3e8a502dae175fb498a81ea009ad1591, type: 2}
+  resultA: 
+  resultB: 
   highValueSceneName: 11
   lowValueSceneName: 12
   decisionValue: 10
   gameOverScene: 0
   eventTexts:
-  - descriptionText: "You're single, but\r\nyou got a good job.\r\nYou feel boring
-      and\r\nlonely. \r\n\r\nYou meet somebody \r\nnew."
+  - descriptionText: 
+    choices: []
+    timeUntilNextText: 0
+  - descriptionText: 
     choices:
-    - choiceText: Kill
-      choiceValue: 20
-    - choiceText: Don't kill
+    - choiceText: 
       choiceValue: 0
+    - choiceText: 
+      choiceValue: 0
+    - choiceText: 
+      choiceValue: 0
+    - choiceText: 
+      choiceValue: 0
+    timeUntilNextText: 0
+  - descriptionText: 
+    choices: []
+    timeUntilNextText: 0
+  - descriptionText: 
+    choices: []
     timeUntilNextText: 0
 --- !u!4 &115110993
 Transform:
@@ -174,7 +188,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 124818214}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -276,7 +290,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 333451495}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -328,7 +342,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 385127431}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -348,7 +362,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 385127431}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -402,7 +416,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 436840188}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -442,7 +456,7 @@ GUITexture:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 643155037}
   m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: 668b475773b4e2a4aafd7ba8427ea47f, type: 3}
+  m_Texture: {fileID: 2800000, guid: 7a61d05a18e56614f8e2d42dcd193d0f, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2
@@ -607,7 +621,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 944564416}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -627,7 +641,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 944564416}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -721,7 +735,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 1140654139}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -784,7 +798,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 1145745937}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -804,12 +818,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 1145745937}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  choice: 4
+  choice: 3
 --- !u!1 &1289810069
 GameObject:
   m_ObjectHideFlags: 0
@@ -925,7 +939,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 1365540945}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -945,12 +959,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 1365540945}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  choice: 3
+  choice: 2
 --- !u!1 &1404591070
 GameObject:
   m_ObjectHideFlags: 0

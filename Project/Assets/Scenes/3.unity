@@ -106,8 +106,8 @@ MonoBehaviour:
     hand and didn\u2019t let go."
   resultB: "And then we played for hours on end. Somehow, after some years, we weren\u2019t
     kids anymore and playing in the woods was just a memory."
-  highValueSceneName: 3a
-  lowValueSceneName: 3b
+  highValueSceneName: 4
+  lowValueSceneName: 5
   decisionValue: 10
   gameOverScene: 0
   eventTexts:
@@ -521,7 +521,7 @@ GUITexture:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 643155037}
   m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: 668b475773b4e2a4aafd7ba8427ea47f, type: 3}
+  m_Texture: {fileID: 2800000, guid: 29e98acf6a5403647bc663c6c58413e9, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2

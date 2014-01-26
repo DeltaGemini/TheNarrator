@@ -102,26 +102,62 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inGameGUI: {fileID: 11400000, guid: 3e8a502dae175fb498a81ea009ad1591, type: 2}
+  resultA: "I knew it wasn\u2019t going to make things easier for us, but we had been
+    through so much, I thought we could deal with anything. I took the promotion and
+    my life was about to get exciting and colourful."
+  resultB: "I didn\u2019t want to risk what we had, because it meant the world to
+    me. Money, travels and adventures couldn\u2019t be more important than being close
+    to the love of my life."
   highValueSceneName: 9
   lowValueSceneName: 10
   decisionValue: 10
   gameOverScene: 0
   eventTexts:
-  - descriptionText: "You're single, but you\u2019ve got a good job. You feel boring
-      and\r lonely. \r\n\r\nYou meet somebody \r\nnew.\r"
-    choices:
-    - choiceText: Kill
-      choiceValue: 20
-    - choiceText: Don't kill
-      choiceValue: 0
+  - descriptionText: "Life was good. We had work. We were happy. Happier than I ever
+      thought we would be. I didn\u2019t worry too much about the future, but it was
+      waiting for me weather I was ready or not. "
+    choices: []
     timeUntilNextText: 0
-  - descriptionText: This is a test
+  - descriptionText: "We didn\u2019t need much money, but we could have used it. You
+      were still in education and I wanted to make life easier for us. You used to
+      say: \u201CWhat else do we need, as long as we have each other?\u201D "
     choices:
-    - choiceText: 
-      choiceValue: 0
-    - choiceText: 
-      choiceValue: 0
-    timeUntilNextText: 5
+    - choiceText: "\u201CWe could use some extra money\u201D"
+      choiceValue: 5
+    - choiceText: "\u201CYour tuition fee is very high, babe.\""
+      choiceValue: 5
+    - choiceText: "\u201CWhat about kids?\u201D"
+      choiceValue: 1
+    - choiceText: '"..."'
+      choiceValue: 1
+    timeUntilNextText: 0
+  - descriptionText: We often talked about travelling the world together, when we
+      were dreaming of the future. I thought we shared the same dreams, or maybe I
+      just assumed it, because I wanted it to be so.
+    choices:
+    - choiceText: 'I read every article on foreign countries I can find. '
+      choiceValue: 5
+    - choiceText: 'I know this is just a dream. A distant one. '
+      choiceValue: 1
+    - choiceText: 'I dream of Hong Kong, but in my dream I travel alone. '
+      choiceValue: 5
+    - choiceText: "No matter how much I want to, I wouldn\u2019t go without you."
+      choiceValue: 1
+    timeUntilNextText: 0
+  - descriptionText: "Remember the night when I told you about a new opening at the
+      job? We wouldn\u2019t have had to worry about money, debts or the apartment
+      anymore. You were sceptic. \u201CThey will ask you to travel a lot. What if
+      you like it better somewhere else?\u201D"
+    choices:
+    - choiceText: "\u201CMy home is wherever you are.\u201D "
+      choiceValue: 1
+    - choiceText: "\u201CI\u2019m not leaving you.\u201D "
+      choiceValue: 5
+    - choiceText: "\u201CThis could be good for both of us.\u201D "
+      choiceValue: 5
+    - choiceText: '"..."'
+      choiceValue: 1
+    timeUntilNextText: 0
 --- !u!4 &115110993
 Transform:
   m_ObjectHideFlags: 0
@@ -181,7 +217,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 124818214}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -283,7 +319,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 333451495}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -335,7 +371,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 385127431}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -355,7 +391,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 385127431}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -409,7 +445,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 436840188}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -449,7 +485,7 @@ GUITexture:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 643155037}
   m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: 668b475773b4e2a4aafd7ba8427ea47f, type: 3}
+  m_Texture: {fileID: 2800000, guid: 12ce71ce6edcd314a9aacf22f5caf3d0, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2
@@ -630,7 +666,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 944564416}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -650,7 +686,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 944564416}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -744,7 +780,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 1140654139}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -807,7 +843,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 1145745937}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -827,12 +863,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 1145745937}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  choice: 4
+  choice: 3
 --- !u!1 &1289810069
 GameObject:
   m_ObjectHideFlags: 0
@@ -948,7 +984,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 1365540945}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -968,12 +1004,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 1365540945}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  choice: 3
+  choice: 2
 --- !u!1 &2107966793
 GameObject:
   m_ObjectHideFlags: 0
