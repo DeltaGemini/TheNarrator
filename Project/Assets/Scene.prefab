@@ -600,7 +600,7 @@ GUIText:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100008}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -610,7 +610,7 @@ GUIText:
   m_TabSize: 4
   m_Font: {fileID: 12800000, guid: 2e828161615a4124b82575b8a59eea94, type: 3}
   m_Material: {fileID: 0}
-  m_FontSize: 25
+  m_FontSize: 18
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2

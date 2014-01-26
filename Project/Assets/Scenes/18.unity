@@ -106,11 +106,12 @@ MonoBehaviour:
   decisionValue: 0
   gameOverScene: 1
   eventTexts:
-  - descriptionText: "Are you really happy \r\nwith living your life \r\nthis way?"
+  - descriptionText: "Imagine you could go back and change \r\nthe decisions that
+      led you here.\r\n\r\nWould you do it?\r\n"
     choices:
-    - choiceText: Yes, I'm happy.
+    - choiceText: No
       choiceValue: 20
-    - choiceText: No... I want to go back!
+    - choiceText: Yes
       choiceValue: 0
     timeUntilNextText: 0
 --- !u!4 &115110993
@@ -148,7 +149,7 @@ Transform:
   m_PrefabInternal: {fileID: 511756839}
   m_GameObject: {fileID: 371379588}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .246999994, y: .200000003, z: -2}
+  m_LocalPosition: {x: .246999994, y: .200000003, z: 0}
   m_LocalScale: {x: .444999993, y: .0900000036, z: 1}
   m_Children: []
   m_Father: {fileID: 1372230544}
@@ -209,7 +210,7 @@ Transform:
   m_PrefabInternal: {fileID: 511756839}
   m_GameObject: {fileID: 415862727}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .246999994, y: .330000013, z: -2}
+  m_LocalPosition: {x: .246999994, y: .330000013, z: 0}
   m_LocalScale: {x: .444999993, y: .0900000036, z: 1}
   m_Children: []
   m_Father: {fileID: 1372230544}
@@ -513,7 +514,7 @@ Transform:
   m_PrefabInternal: {fileID: 511756839}
   m_GameObject: {fileID: 847669407}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .246999994, y: .0799999982, z: -2}
+  m_LocalPosition: {x: .246999994, y: .0799999982, z: 0}
   m_LocalScale: {x: .444999993, y: .0900000036, z: 1}
   m_Children: []
   m_Father: {fileID: 1372230544}
@@ -840,6 +841,89 @@ Transform:
   - {fileID: 371379589}
   - {fileID: 847669408}
   - {fileID: 508869855}
+  - {fileID: 1582556646}
+  m_Father: {fileID: 0}
+--- !u!1 &1582556645
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100004, guid: 9dae4f7d047f67c46a54ae5384865fa0, type: 2}
+  m_PrefabInternal: {fileID: 511756839}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1582556646}
+  - 114: {fileID: 1582556647}
+  m_Layer: 0
+  m_Name: Fade In Out
+  m_TagString: fadeInOut
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1582556646
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400004, guid: 9dae4f7d047f67c46a54ae5384865fa0, type: 2}
+  m_PrefabInternal: {fileID: 511756839}
+  m_GameObject: {fileID: 1582556645}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .5, y: .5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1372230544}
+--- !u!114 &1582556647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400016, guid: 9dae4f7d047f67c46a54ae5384865fa0,
+    type: 2}
+  m_PrefabInternal: {fileID: 511756839}
+  m_GameObject: {fileID: 1582556645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13084b558ab6a144aadc482a076cc8d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alphaFadeValue: 1
+  fadeTime: 3
+  blackTexture: {fileID: 2800000, guid: eea6dc2516de5504d8a26ae2a8c330f8, type: 3}
+  fadeInOut: 1
+--- !u!1 &1620951300
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1620951302}
+  - 114: {fileID: 1620951301}
+  m_Layer: 0
+  m_Name: SceneManager
+  m_TagString: SceneManager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1620951301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1620951300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41e7ca5089e45f84ab2c1a1a119afcf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos: -1
+--- !u!4 &1620951302
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1620951300}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
   m_Father: {fileID: 0}
 --- !u!1 &1806707237
 GameObject:

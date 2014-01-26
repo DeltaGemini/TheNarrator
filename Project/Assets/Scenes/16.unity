@@ -167,6 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2e178d27b1732549b175cc7faf6b3ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inGameGUI: {fileID: 11400000, guid: 3e8a502dae175fb498a81ea009ad1591, type: 2}
   highValueSceneName: 18
   lowValueSceneName: 18
   decisionValue: 0
@@ -638,7 +639,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 685582082}
   m_GameObject: {fileID: 1203589938}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -648,7 +649,7 @@ GUIText:
   m_TabSize: 4
   m_Font: {fileID: 12800000, guid: 2e828161615a4124b82575b8a59eea94, type: 3}
   m_Material: {fileID: 0}
-  m_FontSize: 25
+  m_FontSize: 18
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
@@ -1097,7 +1098,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   alphaFadeValue: 1
-  fadeTime: 1
+  fadeTime: 3
   blackTexture: {fileID: 2800000, guid: eea6dc2516de5504d8a26ae2a8c330f8, type: 3}
   fadeInOut: 1
 --- !u!1 &2078687755

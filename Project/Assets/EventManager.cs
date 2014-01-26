@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class EventManager : MonoBehaviour {
+	public GUISkin inGameGUI;
 
 	private GUIText description;
 
@@ -122,7 +123,7 @@ public class EventManager : MonoBehaviour {
 		if(gameOverScene){
 			GameObject.FindGameObjectWithTag("SceneManager").GetComponent<SceneManager>().GoBackInTime();
 		} else {
-			if(score>decisionValue){
+			if(score>=decisionValue){
 				Application.LoadLevel(highValueSceneName);
 			} else {
 				Application.LoadLevel(lowValueSceneName);
@@ -142,5 +143,12 @@ public class EventManager : MonoBehaviour {
 	}
 
 	void OnGUI(){
+		GUI.skin = inGameGUI;
+
+		GUI.Label (new Rect (35, 30, 500, 300), description.text);
+		/*
+		if (GUI.Button (new Rect (35, 300, 500, 150), choice1.text)) {
+			//Do nothing
+		}*/
 	}
 }
