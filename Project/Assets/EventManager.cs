@@ -78,27 +78,28 @@ public class EventManager : MonoBehaviour
 
 		public void UpdateTextsAndChoices ()
 		{
-				if (textPos < eventTexts.Count - 1) {
-						textPos++;
-						description.text = eventTexts [textPos].descriptionText;
 			
-						if (gotChoices ()) {
-								for (int i=0; i<eventTexts[textPos].choices.Count; i++) {
-										choices [i].text = eventTexts [textPos].choices [i].choiceText;
-										//choiceWindows [i].enabled = true;
-								}
-						} else {
-								choice1.text = "";
-								choice2.text = "";
-								choice3.text = "";
-								choice4.text = "";
-
-								choiceWindow1.enabled = false;
-								choiceWindow2.enabled = false;
-								choiceWindow3.enabled = false;
-								choiceWindow4.enabled = false;
-						}
-				} else if(!showedLastText){
+			if (textPos < eventTexts.Count - 1) {
+				textPos++;
+				description.text = eventTexts [textPos].descriptionText;
+				
+				if (gotChoices ()) {
+					for (int i=0; i<eventTexts[textPos].choices.Count; i++) {
+						choices [i].text = eventTexts [textPos].choices [i].choiceText;
+						//choiceWindows [i].enabled = true;
+					}
+				} else {
+					choice1.text = "";
+					choice2.text = "";
+					choice3.text = "";
+					choice4.text = "";
+					
+					choiceWindow1.enabled = false;
+					choiceWindow2.enabled = false;
+					choiceWindow3.enabled = false;
+					choiceWindow4.enabled = false;
+				}
+			} else if(!showedLastText){
 				Debug.Log ("SHOWING LAST TEXT!");
 				showedLastText=true;
 				description.text = "";
@@ -111,16 +112,15 @@ public class EventManager : MonoBehaviour
 				choiceWindow2.enabled = false;
 				choiceWindow3.enabled = false;
 				choiceWindow4.enabled = false;
-
+				
 				if(score>=decisionValue){
 					description.text = resultA;
 				} else {
 					description.text = resultB;				
-
+					
 				}
-		} else {
-			AfterLastText();
-		}
+			}
+
 	}
 
 		public void AfterLastText(){
@@ -161,10 +161,14 @@ public class EventManager : MonoBehaviour
 		// Update is called once per frame
 		void Update ()
 		{
-				if (Input.GetMouseButtonDown (0) && !gotChoices ()) {
+				if (Input.GetMouseButtonDown (0)) {
+			if(!gotChoices ()){
 						UpdateTextsAndChoices ();
-				}
-		}
+				} else if(showedLastText){
+				AfterLastText();
+			}
+	}
+	}
 
 		void OnGUI ()
 		{
