@@ -4,15 +4,14 @@ using System.Collections;
 public class GM_Script : MonoBehaviour {
 
 	// Use this for initialization
-	void Awake () {
-		DontDestroyOnLoad (this.gameObject);
+	void Start () {
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		//Cheat
-		if (Input.GetKeyDown (KeyCode.P)) {
-			Application.LoadLevel(Application.loadedLevel +1);
+		if (Input.GetMouseButton(0)) {
+			Application.LoadLevel("16");
 		}
 	}
 

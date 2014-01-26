@@ -127,7 +127,15 @@ MonoBehaviour:
     choices: []
     timeUntilNextText: 0
   - descriptionText: 
-    choices: []
+    choices:
+    - choiceText: 
+      choiceValue: 0
+    - choiceText: 
+      choiceValue: 0
+    - choiceText: 
+      choiceValue: 0
+    - choiceText: 
+      choiceValue: 0
     timeUntilNextText: 0
 --- !u!4 &115110993
 Transform:
