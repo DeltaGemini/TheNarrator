@@ -102,8 +102,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inGameGUI: {fileID: 11400000, guid: 3e8a502dae175fb498a81ea009ad1591, type: 2}
-  resultA: 
-  resultB: 
+  resultA: There was no way of saving this situation. We filed for a divorce and I
+    fought for every last penny. What a pitiful consolation prize for my humiliation.
+  resultB: Enraged and beside myself I start a struggle. I lost all control over my
+    senses. When I come to, you are on the floor, blood everywhere. I stare down at
+    my dripping hands and blackout.
   highValueSceneName: 14
   lowValueSceneName: 15
   decisionValue: 10
