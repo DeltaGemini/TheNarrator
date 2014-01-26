@@ -106,7 +106,7 @@ MonoBehaviour:
   resultB: 
   highValueSceneName: 0
   lowValueSceneName: 0
-  decisionValue: 0
+  decisionValue: 10
   gameOverScene: 1
   eventTexts:
   - descriptionText: "Imagine you could go back and change the decisions that led
