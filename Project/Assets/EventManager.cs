@@ -100,6 +100,9 @@ public class EventManager : MonoBehaviour
 					choiceWindow4.enabled = false;
 				}
 			} else if(!showedLastText){
+			if((resultA=="" || resultA==null) && (resultB==null || resultB=="")){
+				AfterLastText();
+			} else {
 				Debug.Log ("SHOWING LAST TEXT!");
 				showedLastText=true;
 				description.text = "";
@@ -120,6 +123,7 @@ public class EventManager : MonoBehaviour
 					
 				}
 			}
+		}
 
 	}
 
