@@ -102,56 +102,56 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inGameGUI: {fileID: 11400000, guid: 3e8a502dae175fb498a81ea009ad1591, type: 2}
-  resultA: "I knew it wasn\u2019t going to make things easier for us, but we had been
-    through so much, I thought we could deal with anything. I took the promotion and
-    my life was about to get exciting and colourful."
-  resultB: "I didn\u2019t want to risk what we had, because it meant the world to
-    me. Money, travels and adventures couldn\u2019t be more important than being close
-    to the love of my life."
+  resultA: "\nI knew it wasn\u2019t going to make things easier for us, but we had
+    been through so much, I thought we could deal with anything. \n\nI take the promotion
+    and my life is about to get exciting and colourful."
+  resultB: "\nI didn\u2019t want to risk what we had, because it meant the world to
+    me. \n\nMoney, travels and adventures couldn\u2019t be more important than being
+    close to the love of my life."
   highValueSceneName: 9
   lowValueSceneName: 10
   decisionValue: 10
   gameOverScene: 0
   eventTexts:
-  - descriptionText: "Life was good. We had work. We were happy. Happier than I ever
-      thought we would be. I didn\u2019t worry too much about the future, but it was
-      waiting for me weather I was ready or not. "
+  - descriptionText: "\n1974. \n\nLife was good. We had work. \nWe were happy. \n\nHappier
+      than I ever thought we would be. \n\nI didn\u2019t worry too much about the
+      future, but it was waiting for me weather I was ready or not."
     choices: []
     timeUntilNextText: 0
-  - descriptionText: "We didn\u2019t need much money, but we could have used it. You
-      were still in education and I wanted to make life easier for us. You used to
-      say: \u201CWhat else do we need, as long as we have each other?\u201D "
+  - descriptionText: "\nWe didn\u2019t need much money, but we could have used it.\n\nYou
+      were still in education and I wanted to make life easier for us. \n\nYou used
+      to say: \n\n\u201CWhat else do we need, as long as we have each other?\u201D"
     choices:
     - choiceText: "\u201CWe could use some extra money\u201D"
       choiceValue: 5
-    - choiceText: "\u201CYour tuition fee is very high, babe.\""
+    - choiceText: "\u201CYour tuition fee is very high, honey.\u201D"
       choiceValue: 5
     - choiceText: "\u201CWhat about kids?\u201D"
       choiceValue: 1
     - choiceText: '"..."'
       choiceValue: 1
     timeUntilNextText: 0
-  - descriptionText: We often talked about travelling the world together, when we
-      were dreaming of the future. I thought we shared the same dreams, or maybe I
-      just assumed it, because I wanted it to be so.
+  - descriptionText: "We often talked about travelling the world together, when we
+      were dreaming of the future. \n\nI thought we shared the same dreams, or maybe
+      I just assumed it, because I wanted it to be so. "
     choices:
     - choiceText: 'I read every article on foreign countries I can find. '
       choiceValue: 5
     - choiceText: 'I know this is just a dream. A distant one. '
       choiceValue: 1
-    - choiceText: 'I dream of Hong Kong, but in my dream I travel alone. '
+    - choiceText: 'I dream of Hawai, but in my dream I travel alone. '
       choiceValue: 5
     - choiceText: "No matter how much I want to, I wouldn\u2019t go without you."
       choiceValue: 1
     timeUntilNextText: 0
   - descriptionText: "Remember the night when I told you about a new opening at the
-      job? We wouldn\u2019t have had to worry about money, debts or the apartment
-      anymore. You were sceptic. \u201CThey will ask you to travel a lot. What if
-      you like it better somewhere else?\u201D"
+      company? We wouldn\u2019t have had to worry about money, depts or the apartment
+      anymore. \n\nYou were sceptic. \n\n\u201CThey will ask you to travel a lot.
+      \nWhat if you like it better somewhere else?\u201D"
     choices:
-    - choiceText: "\u201CMy home is wherever you are.\u201D "
+    - choiceText: "\u201CI want to be wherever you are.\u201D "
       choiceValue: 1
-    - choiceText: "\u201CI\u2019m not leaving you.\u201D "
+    - choiceText: "\u201CI won't be gone forever.\u201D "
       choiceValue: 5
     - choiceText: "\u201CThis could be good for both of us.\u201D "
       choiceValue: 5

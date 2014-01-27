@@ -102,57 +102,61 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inGameGUI: {fileID: 11400000, guid: 3e8a502dae175fb498a81ea009ad1591, type: 2}
-  resultA: 
-  resultB: 
-  highValueSceneName: 15
-  lowValueSceneName: 16
+  resultA: "\nAfter you sobered up, \nyou apologised and we agreed to go to couple\u2019s
+    therapy. \n\nAfter all, without you I might as well be living on the streets."
+  resultB: "\nEnraged and beside myself I started a struggle. \n\nI lost all control
+    over my senses. \n\nWhen I came to, you were on the floor, blood everywhere. \n\nI
+    stared down at my dripping hands and blacked out."
+  highValueSceneName: 16
+  lowValueSceneName: 15
   decisionValue: 10
   gameOverScene: 0
   eventTexts:
-  - descriptionText: Considering my pitiful situation and the unexpected wealth of
-      my new partner, the decision to get married was easy for me. after the honeymoon
-      phase I began seeing the first downsides to this new arrangement. After a few
-      years, I felt like a prisoner in my home.
+  - descriptionText: "\n1984.\n\nConsidering my thirst for adventure and the unexpected
+      wealth of my new partner, the decision to get married was easy for me. \n\nWhen
+      the honeymoon phase was over I began seeing the first downsides to this new
+      arrangement. \nAfter a few years I felt like a prisoner in my home."
     choices: []
     timeUntilNextText: 0
-  - descriptionText: "My ways of contributing are limited, so most nights, like tonight,
-      I prepare dinner. But like every night, my partner still finds reasons to criticise
-      me. Especially when drunk, like so often these days. \u201CSame food as every
-      week, huh? I would expect you would at least learn how to make it taste like
-      actual food.\u201D"
+  - descriptionText: "\nMy ways of contributing were limited, so most nights, like
+      tonight, I prepared dinner. \n\nBut like every night, you still found reasons
+      to criticise me. \n\nEspecially when you were drunk, like so often these days.\n\n\u201CSame
+      as every week, huh? \nI would expect you would at least learn how to make it
+      taste like actual food.\u201D"
     choices:
     - choiceText: 'I count to ten and take some deep breaths. '
       choiceValue: 1
     - choiceText: "\u201CI am done with this, make your own dinner for all I care.\u201D"
       choiceValue: 1
-    - choiceText: "\u201CWatch what you say. Don\u2019t push me over the line\u201D"
+    - choiceText: "\u201CWatch what you say. Don\u2019t push me.\u201D"
       choiceValue: 5
     - choiceText: "\u201C\u2026\u201D"
       choiceValue: 5
     timeUntilNextText: 0
-  - descriptionText: "My spouse looks at me with disgust and slurs: \u201CYou a natural
-      born loser. You have no dignity at all. Remind we why I feed you every day.
-      You are useless.\u201D"
+  - descriptionText: "\nYou looked at me with disgust and slurred:\n \n\u201CYou are
+      a natural born loser. \n\nYou have no dignity at all. \n\nRemind we why I feed
+      you every day.\n \nYou are so useless.\u201D"
     choices:
     - choiceText: "\u201CThis conversation is over.\u201D"
-      choiceValue: 1
+      choiceValue: 5
     - choiceText: "\u201CLook. You\u2019ve had too much to drink.\u201D"
+      choiceValue: 5
+    - choiceText: "\u201CThis is enough. I am warning you!\u201C"
       choiceValue: 1
-    - choiceText: "\u201CThis is enough. I am warning you: get away from me!\u201C"
-      choiceValue: 5
     - choiceText: I grab a glass and throw it against the wall.
-      choiceValue: 5
+      choiceValue: 1
     timeUntilNextText: 0
-  - descriptionText: "My entire body is shaking. My spouse is laughing: \u201CI will
-      call the police and tell them you were attacking me. I will make sure they will
-      put you away and never let you out again.\u201D I close my eyes."
+  - descriptionText: "\nMy entire body is shaking. \n\nYou are just laughing.\n \n\u201CWhat
+      are you gonna do? I could call the police and tell them you were attacking me.
+      \n\nI can make sure they will put you away and never let you out again.\u201D
+      \n\nI close my eyes."
     choices:
     - choiceText: '"..."'
       choiceValue: 5
     - choiceText: I wait until the torture is over.
-      choiceValue: 1
-    - choiceText: 'I feel my emotions over flooding and I let them take over. '
       choiceValue: 5
+    - choiceText: 'I feel my emotions over flooding and I let them take over. '
+      choiceValue: 1
     - choiceText: I start laughing.
       choiceValue: 1
     timeUntilNextText: 0

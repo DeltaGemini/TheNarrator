@@ -102,21 +102,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inGameGUI: {fileID: 11400000, guid: 3e8a502dae175fb498a81ea009ad1591, type: 2}
-  resultA: 
-  resultB: 
+  resultA: "\nIt was a rough time, but we made it through it. \n\nIt made us stronger.
+    \n\nWe wanted to grow old together."
+  resultB: "\nAs all childhood stories, this one had to end as well. \n\nIt wasn\u2019t
+    easy, and we still sometimes think about each other. \n\nIt was time to move on."
   highValueSceneName: 6
   lowValueSceneName: 7
   decisionValue: 10
   gameOverScene: 0
   eventTexts:
-  - descriptionText: We were a lovely couple and shared many firsts with each other.
-      A true romance. But growing up means learning to take responsibility for your
-      life, and with all the time I had to spent on that internship, you felt like
-      I grew tired of you.
+  - descriptionText: "\n1964. \n\nWe were a lovely couple and shared many firsts with
+      each other. \n\nA true romance. \n\nBut growing up means learning to take responsibility
+      for your life, and with all the time I had to spent on that internship, you
+      felt like I grew tired of you."
     choices: []
     timeUntilNextText: 5
-  - descriptionText: "\u201CI know I keep repeating myself, but I just miss you so
-      much. Can\u2019t you stay for dinner?\u201D"
+  - descriptionText: "\nEvery night you asked the same question:\n\n\u201CI know I
+      keep repeating myself, but I just miss you so much. Can\u2019t you stay for
+      dinner?\u201D\n\nBut I had my internship to think about."
     choices:
     - choiceText: "\u201CI have to sleep.\u201D "
       choiceValue: 1
@@ -127,24 +130,24 @@ MonoBehaviour:
     - choiceText: '"..."'
       choiceValue: 1
     timeUntilNextText: 0
-  - descriptionText: "I had hoped it was over, but like all torturous conversations
+  - descriptionText: "\nI had hoped it was over, but like all torturous conversations
       in a relationship, this one couldn\u2019t just be smoothed over and forgotten.
-      This time I\u2019d had to cancel a day out we\u2019d planned, and of course
-      this escalated until we were having a similar argument, with us both avoiding
-      the main concern."
+      \n\nThis time I\u2019d had to cancel a day out we\u2019d planned, and of course
+      we were having another argument, with us both avoiding the main concern."
     choices:
-    - choiceText: "\u201CIt won\u2019t happen again, I promise.\u201D"
+    - choiceText: "\u201CIt won\u2019t happen again, I promise!\u201D"
       choiceValue: 5
     - choiceText: "\u201CI can\u2019t just say no to work.\u201D"
       choiceValue: 1
-    - choiceText: We hug, I apologise.
+    - choiceText: I apologise, we hug.
       choiceValue: 5
-    - choiceText: "\u201C\u2026\u201D"
+    - choiceText: '"..."'
       choiceValue: 1
     timeUntilNextText: 0
-  - descriptionText: "Another day, a similar story. Today there are even tears in
-      your eyes. \u201CI have been thinking. We only know each other, we have never
-      been with anyone else. Maybe this is a mistake, maybe we should take a break\u2026\u201D"
+  - descriptionText: "\nAnother day, another story. \n\nToday there are even tears
+      in your eyes. \n\n\u201CI have been thinking. \nWe only know each other, we
+      have never been with anyone else. Maybe this is a mistake, maybe we should take
+      a break...\u201D"
     choices:
     - choiceText: "\u201CWhat are you talking about?\u201D"
       choiceValue: 5
@@ -316,7 +319,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 333451495}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -388,7 +391,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 385127431}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -442,7 +445,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 436840188}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -694,7 +697,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 944564416}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -714,7 +717,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 944564416}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -808,7 +811,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 1140654139}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -871,7 +874,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 1145745937}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -891,7 +894,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 1145745937}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -1012,7 +1015,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 1365540945}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -1032,7 +1035,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 1365540945}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 

@@ -109,16 +109,16 @@ MonoBehaviour:
   decisionValue: 10
   gameOverScene: 0
   eventTexts:
-  - descriptionText: "This is not the happy ending I imagined when I was 7 years old
-      and dreaming of my life, but it is a happy ending nonetheless. \r\n\r\nI was
-      a bastard, a miserable rotten piece of s** and I got exactly what was coming
-      towards me. My partner finally had enough of me and ended my sad excuse of a
-      life, and the entire world is better off without me. "
+  - descriptionText: "\nIn 1994 comes not the happy ending I imagined when I was 7
+      years old, but it is a happy ending nonetheless. \n\nI was a bastard, a miserable
+      rotten piece of s*** and I got exactly what was coming towards me. \n\nMy partner
+      finally had enough of me and ended my sad excuse of a life, and the world is
+      better off without me."
     choices: []
     timeUntilNextText: 0
-  - descriptionText: "Still, I haven\u2019t always been like that. When I was 7, I
-      was a good kid, I had my entire life ahead of me, the world was my oyster. \r\n\r\nWhat
-      if could go back in time and change what happened?"
+  - descriptionText: "\nStill, I haven\u2019t always been like that. \n\nWhen I was
+      7, I was a good kid, I had my entire life ahead of me. \n\nThe world was my
+      oyster."
     choices: []
     timeUntilNextText: 0
 --- !u!4 &115110993

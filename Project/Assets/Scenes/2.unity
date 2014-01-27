@@ -109,13 +109,12 @@ MonoBehaviour:
   decisionValue: 10
   gameOverScene: 0
   eventTexts:
-  - descriptionText: "There is a time in everyone\u2019s life when you look back at
+  - descriptionText: "The year is 2014.  \n\nThere is a time when you look back at
       all the choice you made and wonder, what if you could go back 10, 20, or 30
-      years and re-evaluate your decisions? Would I have chosen differently? How would
-      my life look today, if I hadn\u2019t taken that job, or kissed this girl. Would
-      I still be a writer? So I decide to explore my choices and see how things could
-      have been different. So I\u2019m 7 years old again, not a care in the world
-      and not a wrinkle on my face."
+      years and change what you did? \nHow would my life look today, if I hadn\u2019t
+      taken that job, or kissed this girl. Would I still be a writer? \n \nI think
+      back and I\u2019m 7 years old again, not a care in the world and not a wrinkle
+      on my face."
     choices: []
     timeUntilNextText: 0
 --- !u!4 &115110993

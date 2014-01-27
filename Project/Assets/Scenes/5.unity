@@ -102,21 +102,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inGameGUI: {fileID: 11400000, guid: 3e8a502dae175fb498a81ea009ad1591, type: 2}
-  resultA: 
-  resultB: 
+  resultA: "The company started becoming my second home, my colleagues became my family,
+    and I felt like I belonged.\n\nAfter the summer, they hired me immediately. \n\nI
+    was never more proud."
+  resultB: "I wasn\u2019t very passionate about this internship, so it didn\u2019t
+    come as a big surprise when they didn\u2019t offer me a job after the summer.
+    \n\nWithout a direction, I started drifting. \n\nI should have known what would
+    happen next."
   highValueSceneName: 7
   lowValueSceneName: 8
   decisionValue: 10
   gameOverScene: 0
   eventTexts:
-  - descriptionText: 'Being an adolescent is strange sensation: you have all the time
-      in the world, but no direction. My friends were going to dances and talking
-      about kids from other high schools, but I wanted to make a living someday and
-      have a family.'
+  - descriptionText: "It\u2019s 1964.\n\nBeing an adolescent is a strange sensation:
+      \n\nYou have all the time in the world, but no direction. \n\nMy friends were
+      going to dances and talking about kids from other high schools, but I wanted
+      to make a living someday and have a family."
     choices: []
     timeUntilNextText: 10
-  - descriptionText: "Pushing paperwork isn\u2019t a lot of fun and sometimes my thoughts
-      drift off to your early childhood and my best friend. "
+  - descriptionText: "\nPushing paperwork isn\u2019t a lot of fun and sometimes my
+      thoughts drifted off to my early childhood and you.\n\nI wonder where you are
+      right now.\n\nI wonder if you ever think of me."
     choices:
     - choiceText: I try to find their phone number.
       choiceValue: 1
@@ -127,9 +133,9 @@ MonoBehaviour:
     - choiceText: 'I keep staring into space. '
       choiceValue: 1
     timeUntilNextText: 0
-  - descriptionText: "One day a call comes in, but everybody is out for lunch. I was
-      told not to answer the phone, I\u2019m just an intern after all. I could get
-      in trouble."
+  - descriptionText: "\nOne day a call came in, but everybody was out for lunch. \n\nI
+      was told not to answer the phone, being only an intern after all. \n\nI could
+      have gotten in trouble."
     choices:
     - choiceText: 'I take the call. '
       choiceValue: 5
@@ -142,8 +148,8 @@ MonoBehaviour:
     timeUntilNextText: 0
   - descriptionText: "I\u2019ll never forget that special Sunday night at the end
       of the summer, when my friends asked me again and again to come to the dance
-      with them. \u201CYou live only once! Somebody you like might just be waiting
-      for you. How could you say no?\u201D"
+      with them. \n\n\u201CYou live only once! \n\nSomebody you like might just be
+      waiting for you. \n\nHow could you say no?\u201D"
     choices:
     - choiceText: I go the dance, but I leave at 10pm.
       choiceValue: 5
@@ -358,7 +364,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 333451495}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -430,7 +436,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 385127431}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -484,7 +490,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 436840188}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -689,7 +695,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 944564416}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -709,7 +715,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 944564416}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -803,7 +809,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 1140654139}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -866,7 +872,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 1145745937}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -886,7 +892,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 1145745937}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -1007,7 +1013,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 1365540945}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -1027,7 +1033,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 921963505}
   m_GameObject: {fileID: 1365540945}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 

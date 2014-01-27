@@ -102,42 +102,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inGameGUI: {fileID: 11400000, guid: 3e8a502dae175fb498a81ea009ad1591, type: 2}
-  resultA: "My partner understands that I am a victim of my addiction and and that
-    I\u2019m trying to get better. I sign up for detox, rehabilitation and start going
-    to A.A. meetings. I have begun hating myself these last years and want to change."
-  resultB: As much as I am using my partner, they are using me. I feel no guilt for
-    my actions, nor do I see any motivations to change. In the end, everybody gets
-    what they deserve.
+  resultA: " \nYou understood that I was a victim of my addiction and that I was trying
+    to get better. \n\nI signed up for detox, rehabilitation and started going to
+    A.A. meetings. \n\nI had begun hating myself these last years and wanted to change."
+  resultB: "\nAs much as I was using you, you are using me. \n\nI felt no guilt for
+    my actions, nor did I see any motivations to change my behaviour. \n\nIn the end,
+    everybody gets what they deserve."
   highValueSceneName: 16
   lowValueSceneName: 17
   decisionValue: 10
   gameOverScene: 0
   eventTexts:
-  - descriptionText: "Considering my pitiful situation and the unexpected wealth of
-      my new partner, the decision to get married was easy for me. Years of alcohol
-      abuse and regrets have turned you into a bitter person. If it wasn\u2019t for
-      the money, you would have left long ago."
+  - descriptionText: "\n1984.\n\nConsidering my pitiful situation and the unexpected
+      wealth of my new partner, the decision to get married was easy for me. \n\nYears
+      of alcohol abuse and regrets had turned me into a bitter person. \n\nIf it wasn\u2019t
+      for the money, I would have left long ago."
     choices: []
     timeUntilNextText: 0
-  - descriptionText: You are having visit from some friends of yours. Your partner
-      have not cleaned up the house before they arrived and after they leave you confront
-      her. What will you tell her?
+  - descriptionText: "\nYou were encouraging me to find work, but I didn\u2019t see
+      the point.\n\nI had tried many times, and you were just showing me once again,
+      how inadequate you found me.\n\nIt was making me angry."
     choices:
-    - choiceText: "\u201CListen homo imbecilicus, how many times should I tell you
-        fat-eared mongrel that you NEED cleaning up when I say it!\u201D"
+    - choiceText: "\u201CEasy for you to say.\u201D"
       choiceValue: 5
-    - choiceText: "\u201CWhy did you not clean up as I asked for? My friends deserve
-        nice treatment.\u201D"
+    - choiceText: "\u201DI tried. No one wants me.\u201D"
+      choiceValue: 5
+    - choiceText: "\u201CWhat do you care? \nYou\u2019re filthy rich!\u201D"
       choiceValue: 1
-    - choiceText: "All the cakes and beers left from the party you deliberately spill
-        out all over the floor. \u201CNow my incompetent half, go and clean this up.
-        Maybe you will then learn to understand me the hard way.\u201D"
-      choiceValue: 5
+    - choiceText: "\u201DIf I did, do you think I\u2019d still be here?\u201D"
+      choiceValue: 1
     timeUntilNextText: 0
-  - descriptionText: "Since my partner started monitoring my spendings, I had to come
-      up with more creative ways of obtaining my \u201Cmedicine\u201D. When my spouse
-      discovers I used their credit card, they felt betrayed: \u201CYou stole from
-      me?\u201D"
+  - descriptionText: "Since you started monitoring my spendings, I had to come up
+      with more creative ways of obtaining my \u201Cmedicine\u201D. \n\nWhen you discovered
+      I used their credit card, you felt betrayed: \n\u201CYou stole from me?\u201D"
     choices:
     - choiceText: "\u201CI\u2019m sorry. I will pay you back.\u201D"
       choiceValue: 5
@@ -148,14 +145,15 @@ MonoBehaviour:
     - choiceText: "\u201C\u2026\u201D"
       choiceValue: 5
     timeUntilNextText: 0
-  - descriptionText: After a few weeks, some old friends I borrowed money from, find
-      me and start harassing me. I needed money, as much and fast as I could get.
+  - descriptionText: "After a few weeks, some old friends I borrowed money from found
+      me and started harassing me. \n\nI needed money, as much and fast as I could
+      get."
     choices:
-    - choiceText: I beg my partner for more money.
+    - choiceText: I beg you for more money.
       choiceValue: 5
-    - choiceText: I steal another one of their credit cards.
+    - choiceText: I steal another one of your credit cards.
       choiceValue: 1
-    - choiceText: I forge their last will to make me the sole heir.
+    - choiceText: I forge your last will to make me the sole heir.
       choiceValue: 1
     - choiceText: "I won\u2019t steal from my spouse anymore."
       choiceValue: 5

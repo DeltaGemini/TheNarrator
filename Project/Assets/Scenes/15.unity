@@ -109,11 +109,10 @@ MonoBehaviour:
   decisionValue: 0
   gameOverScene: 0
   eventTexts:
-  - descriptionText: "The things I did in blind rage got me imprisoned for manslaughter.
-      Everyday I sit on my bunk bed, my heavy head in my hands and ponder about the
-      choice I made and what I have turned into. I am ridden with guilt, a monster
-      worse than any horror movie could depict.\r\n\r\nEvery day I wonder: What if
-      just you could go back in time and change what I did?\r\n"
+  - descriptionText: "\n1994.\n\nThe things I did in blind rage got me imprisoned
+      for manslaughter. \n\nEveryday I sit on my bunk bed, my head in my hands and
+      ponder about the choices I made.\nI am ridden with guilt, a monster worse than
+      any horror movie could depict. \n\nIf I could take my life, I would."
     choices: []
     timeUntilNextText: 0
 --- !u!4 &115110993

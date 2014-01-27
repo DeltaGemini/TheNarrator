@@ -102,60 +102,60 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inGameGUI: {fileID: 11400000, guid: 3e8a502dae175fb498a81ea009ad1591, type: 2}
-  resultA: My limited options leave me paralysed. I feel numb and empty. When my date
-    proposes to me, I hope for the best and say yes. This could be just the thing
-    to snap me out of this stasis.
-  resultB: Slowly, creepily, the glass of wine night for night has turned into a non-optional
-    security blanket. At this point I am far from seeing it clearly, but here is where
-    I missed the chance to get back on the wagon.
+  resultA: "\nI could trust myself in situations like these. \n\nI love you. I would
+    have never betrayed you."
+  resultB: "\nI never meant for this to happen, but I got carried away from the excitement
+    and let myself slip. \n\nI became unfaithful."
   highValueSceneName: 13
   lowValueSceneName: 14
   decisionValue: 10
   gameOverScene: 0
   eventTexts:
-  - descriptionText: The loss of income hit me harder than I thought. I felt like
-      I had been getting along fine with my boss, but as it turned out, he had been
-      very unhappy with me. So much so, that his performance evaluation flagged me
-      as 'unhirable' for any job I applied for. This internship had turned into a
-      trap for my career.
+  - descriptionText: "\nBy 1984, our marriage had turned into a routine. \n\nWe were
+      not madly in love anymore, but we\u2019re not 17 either. \n\nLife was fulfilling
+      and the world was my oyster. \n\nMy travels took me all around the world and
+      I loved it. \nI was in Hawai!"
     choices: []
     timeUntilNextText: 0
-  - descriptionText: This was a new low point in my life. The realisation hit me hard
-      and unexpected. Where I thought I had time and choice, I was suddenly left alone
+  - descriptionText: "\nYou, my love, were not equally excited.\n\nSometimes you called
+      me on the phone.\n\n\u201CI hardly ever get to see you. I wonder what you are
+      up to all these nights.\u201D"
     choices:
-    - choiceText: I call up an old friend to chat over a drink.
+    - choiceText: "\u201CYou are overreacting.\u201D"
       choiceValue: 1
-    - choiceText: "I\u2019m having a glass of wine to calm me down."
-      choiceValue: 1
-    - choiceText: I curl up in a ball and pity myself.
+    - choiceText: "\u201CI\u2019m sorry...\u201D"
       choiceValue: 5
-    - choiceText: I do nothing. I am nothing.
+    - choiceText: "\u201CCome with me next time?\u201D"
       choiceValue: 5
-    timeUntilNextText: 0
-  - descriptionText: The more rejections I receive, the lower my self esteem sinks.
-      My friends tell me to go out and meet somebody new.
-    choices:
-    - choiceText: "I don\u2019t want to meet anyone."
-      choiceValue: 5
-    - choiceText: "I\u2019m a loser."
-      choiceValue: 5
-    - choiceText: I join my friends.
-      choiceValue: 1
-    - choiceText: I have a drink by myself.
+    - choiceText: "\u201CThat's not fair. I do this for you.\u201D"
       choiceValue: 1
     timeUntilNextText: 0
-  - descriptionText: Me friends are setting me up with someone. I have nothing better
-      to do, so why not spend some time together. I let them drag me out for a group
-      dinner.
+  - descriptionText: '
+
+      I was never worried about my marriage, but when I met someone new at a conference,
+      and had the best time in years, I started thinking.'
     choices:
-    - choiceText: "I\u2019m going through the motions."
-      choiceValue: 5
-    - choiceText: I feel inadequate and leave early.
-      choiceValue: 5
-    - choiceText: I have fun and stay up all night.
+    - choiceText: "I haven\u2019t felt this careless in a long time."
       choiceValue: 1
-    - choiceText: I invite them over for drinks.
+    - choiceText: I wish my spouse could see my life like this.
+      choiceValue: 5
+    - choiceText: I wish my partner would understand me the same way.
       choiceValue: 1
+    - choiceText: This could give my marriage its missing spark.
+      choiceValue: 5
+    timeUntilNextText: 0
+  - descriptionText: "\nOn the last day of my trip, I run into my new friend again,
+      who is heading towards the hotel bar. \n\n\u201DCare to join me for nightcap?\u201D\n\nI\u2019m
+      tempted."
+    choices:
+    - choiceText: "\u201CWhy not, it\u2019s the last night.\u201D"
+      choiceValue: 1
+    - choiceText: I agree and we end up talking for hours.
+      choiceValue: 1
+    - choiceText: "\u201CSorry, I have an early flight.\u201D"
+      choiceValue: 5
+    - choiceText: One drink, then I leave.
+      choiceValue: 5
     timeUntilNextText: 0
 --- !u!4 &115110993
 Transform:

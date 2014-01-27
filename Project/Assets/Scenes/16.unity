@@ -174,14 +174,11 @@ MonoBehaviour:
   decisionValue: 0
   gameOverScene: 0
   eventTexts:
-  - descriptionText: "Many years of marriage have taught me very little, most important
-      of all I learned that some choices, choices which seem so reasonable at the
-      time, you will regret forever. \r\n\r\nI am married, but honestly, I\u2019d
-      rather not be. We\u2019re making each other more miserable every day and you
-      cannot help but wonder: "
-    choices: []
-    timeUntilNextText: 0
-  - descriptionText: What if I could go back in time and change what happened?
+  - descriptionText: "\nIt\u2019s 1994.\n\nMany years of marriage have taught me very
+      little, most important of all I learned that some choices, choices which seem
+      so reasonable at the time, you will regret forever. \n\nI\u2019m married, but
+      honestly, I\u2019d rather not be. \nWe\u2019re making each other more miserable
+      every day."
     choices: []
     timeUntilNextText: 0
 --- !u!4 &115110993

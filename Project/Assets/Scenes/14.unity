@@ -109,11 +109,10 @@ MonoBehaviour:
   decisionValue: 10
   gameOverScene: 0
   eventTexts:
-  - descriptionText: "After my divorce, I rediscovered life. Finally I get to do all
-      the things I had to deny myself all those years. I am free. My career has taken
-      a fantastic turn and I am surrounded by good friends. Certainly, sometimes I
-      feel lonely. \r\n\r\nSometimes, I can\u2019t help but wonder: What if I could
-      just could go back in time and change what I did?\r\n"
+  - descriptionText: "\nIt\u2019s 1994.\n\nAfter my divorce, I rediscovered life.
+      Finally I got to do all the things I was denying myself all those years. \n\nI
+      am free. \n\nMy career has taken a fantastic turn and I am surrounded by good
+      friends. \nCertainly, sometimes I feel lonely."
     choices: []
     timeUntilNextText: 0
 --- !u!4 &115110993

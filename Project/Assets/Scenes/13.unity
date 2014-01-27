@@ -109,11 +109,11 @@ MonoBehaviour:
   decisionValue: 10
   gameOverScene: 0
   eventTexts:
-  - descriptionText: "Many years have passed and I call myself to lucky to have a
-      wonderful spouse and a fantastic job. Yet, it troubles me that we cannot have
-      any kids due to my own infertility. If I go on with my life I will be comfortable,
-      but no family members will be there to help me when you grow old? \r\n\r\nWhat
-      if I could just could go back in time and change the choices I made?\r\n"
+  - descriptionText: "\n1994.\n\r\nMany years have passed and I call myself to lucky
+      to have a wonderful spouse and a fantastic job. \nYet, it troubles me that we
+      cannot have any kids due to my own infertility. We will be comfortable and happy,
+      but who will take care of us when we grow old? \nWon\u2019t you regret staying
+      with me? "
     choices: []
     timeUntilNextText: 0
 --- !u!4 &115110993

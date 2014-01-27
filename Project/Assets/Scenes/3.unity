@@ -102,22 +102,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inGameGUI: {fileID: 11400000, guid: 3e8a502dae175fb498a81ea009ad1591, type: 2}
-  resultA: "And then we kissed, shortly and awkwardly, but we kissed. I held your
-    hand and didn\u2019t let go."
-  resultB: "And then we played for hours on end. Somehow, after some years, we weren\u2019t
-    kids anymore and playing in the woods was just a memory."
+  resultA: "\nAnd then we kissed, shortly and awkwardly, but we kissed. \n\nI held
+    your hand and didn\u2019t let go.\n"
+  resultB: "\nAnd then we played for hours on end. \n\nBut somehow, after a few years,
+    we weren\u2019t kids anymore and playing in the woods was just a memory."
   highValueSceneName: 4
   lowValueSceneName: 5
   decisionValue: 10
   gameOverScene: 0
   eventTexts:
-  - descriptionText: "My best friend through all my childhood, my companion, my ally.
-      For years we were inseparable and then \u2026 What happened then? Why didn\u2019t
-      we stay together? "
+  - descriptionText: "It's 1954. \n\nI remember my best friend through all my childhood,
+      my companion, my ally. \nFor years we were inseparable and then \u2026 \n\nWhat
+      happened then? \n\nWhy didn\u2019t we stay together?"
     choices: []
     timeUntilNextText: 0
-  - descriptionText: "\u201CWhere would you like to go today? There is a cabin in
-      the woods I want to explore, it could be haunted. Let\u2019s go!\u201D "
+  - descriptionText: "You arrived at my house, a little out of breath and very excited.\n\n\u201CWhere
+      would you like to go today? \n\nThere is a cabin in the woods I want to explore,
+      it could be haunted. \n\nLet\u2019s go!\u201D"
     choices:
     - choiceText: "\u201CI\u2019m right behind you!\u201D"
       choiceValue: 5
@@ -128,7 +129,8 @@ MonoBehaviour:
     - choiceText: '"..."'
       choiceValue: 1
     timeUntilNextText: 0
-  - descriptionText: "\u201CWhat else do you want to do?\u201D "
+  - descriptionText: "You paused for a moment.\n\n\u201CYou know, if you\u2019d rather
+      do something else, that\u2019s ok, too. Do you have any ideas?\u201D"
     choices:
     - choiceText: "\u201CLet\u2019s go to the cabin.\u201D "
       choiceValue: 5
@@ -136,11 +138,12 @@ MonoBehaviour:
       choiceValue: 1
     - choiceText: "\u201CMaybe we can just hangout?\u201D"
       choiceValue: 5
-    - choiceText: '*Shrug*'
+    - choiceText: Shrug
       choiceValue: 1
     timeUntilNextText: 0
-  - descriptionText: "\u201CYou know, I have been thinking. I\u2019m really glad we
-      are friends. I really like you the best from all the other kids.\u201D"
+  - descriptionText: "Like always, we had a blast.\n\nBefore you left, you said: \n\n\u201CYou
+      know, I have been thinking. \nI\u2019m so glad we are friends. \nI like you
+      the better than all the other kids.\u201D"
     choices:
     - choiceText: "\u201CLook an airplane!\u201D "
       choiceValue: 1
@@ -148,7 +151,7 @@ MonoBehaviour:
       choiceValue: 1
     - choiceText: "\u201CI like you too. A lot.\u201D"
       choiceValue: 5
-    - choiceText: "It took courage to say: \u201CYou\u2019re... cute.\u201D"
+    - choiceText: "It took courage to say: \n\u201CYou\u2019re \u2026 cute.\u201D"
       choiceValue: 5
     timeUntilNextText: 0
 --- !u!4 &115110993
@@ -197,7 +200,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1427671823}
   m_GameObject: {fileID: 124818214}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -299,7 +302,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1427671823}
   m_GameObject: {fileID: 333451495}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -312,7 +315,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 1427671823}
   m_GameObject: {fileID: 333451495}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -353,7 +356,7 @@ Transform:
   m_PrefabInternal: {fileID: 1427671823}
   m_GameObject: {fileID: 385127431}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .246999994, y: .449999988, z: -1}
+  m_LocalPosition: {x: .246999994, y: .449999988, z: 0}
   m_LocalScale: {x: .444999993, y: .0900000036, z: 1}
   m_Children: []
   m_Father: {fileID: 167639667}
@@ -384,7 +387,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1427671823}
   m_GameObject: {fileID: 385127431}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -425,7 +428,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1427671823}
   m_GameObject: {fileID: 436840188}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -438,7 +441,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 1427671823}
   m_GameObject: {fileID: 436840188}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -626,7 +629,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 1427671823}
   m_GameObject: {fileID: 944564416}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -646,7 +649,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1427671823}
   m_GameObject: {fileID: 944564416}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -727,7 +730,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1427671823}
   m_GameObject: {fileID: 1140654139}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -740,7 +743,7 @@ GUIText:
     type: 2}
   m_PrefabInternal: {fileID: 1427671823}
   m_GameObject: {fileID: 1140654139}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Text: Gui Text
   m_Anchor: 0
@@ -803,7 +806,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 1427671823}
   m_GameObject: {fileID: 1145745937}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -823,7 +826,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1427671823}
   m_GameObject: {fileID: 1145745937}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 
@@ -944,7 +947,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 1427671823}
   m_GameObject: {fileID: 1365540945}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Texture: {fileID: 2800000, guid: a8967069874f63f41b546a033fc59c4d, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -964,7 +967,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1427671823}
   m_GameObject: {fileID: 1365540945}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 360ab130785f6f047a6aae3a151052b9, type: 3}
   m_Name: 

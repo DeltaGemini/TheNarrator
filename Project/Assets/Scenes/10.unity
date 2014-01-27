@@ -102,22 +102,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inGameGUI: {fileID: 11400000, guid: 3e8a502dae175fb498a81ea009ad1591, type: 2}
-  resultA: There was no way of saving this situation. We filed for a divorce and I
-    fought for every last penny. What a pitiful consolation prize for my humiliation.
-  resultB: Enraged and beside myself I start a struggle. I lost all control over my
-    senses. When I come to, you are on the floor, blood everywhere. I stare down at
-    my dripping hands and blackout.
+  resultA: "There was no way of saving this situation. \n\nWe filed for a divorce
+    and I fought for every last penny. \n\nWhat a pitiful consolation prize for my
+    humiliation."
+  resultB: "Enraged and beside myself I had started a struggle. \n\nI lost all control
+    over my senses. \n\nWhen I came to, you were on the floor, blood everywhere. \n\nI
+    looked down at my dripping hands and blacked out."
   highValueSceneName: 14
   lowValueSceneName: 15
   decisionValue: 10
   gameOverScene: 0
   eventTexts:
-  - descriptionText: I love my marriage. I love my job. I love my life. I feel like
-      I made all the right choices, or I must be very lucky. In any case, I feel blessed.
+  - descriptionText: "\nIt\u2019s 1984.\n\nI love my marriage. I love my job. I love
+      my life. \n\nI feel like I made all the right choices, or I must have been very
+      lucky. "
     choices: []
     timeUntilNextText: 0
-  - descriptionText: I am preparing dinner, as my spouse emerges from the bedroom
-      with several pieces of luggage and a serious expression on their face.
+  - descriptionText: '
+
+      I was preparing dinner, as you emerged from the bedroom with several pieces
+      of luggage and the saddest expression on your face.'
     choices:
     - choiceText: The only thing I feel my heart beating in my throat.
       choiceValue: 1
@@ -126,8 +130,10 @@ MonoBehaviour:
     - choiceText: I do nothing.
       choiceValue: 1
     timeUntilNextText: 0
-  - descriptionText: My spouse confesses under tears to an affair and blames my absence
-      from home for their loneliness
+  - descriptionText: '
+
+      You confessed under tears to an affair and blamed my absence from home for your
+      loneliness.'
     choices:
     - choiceText: "\u201CI am the one to blame for your infidelity?!\u201D"
       choiceValue: 5
@@ -136,13 +142,13 @@ MonoBehaviour:
     - choiceText: "\u201CStop talking. Now\u201D"
       choiceValue: 5
     timeUntilNextText: 0
-  - descriptionText: I feel rage, desperation and the humiliating feeling of betrayal
-      creeping up in me. My partner approaches me in an attempt to embrace me but
-      all I can feel is disgust.
+  - descriptionText: "\nI felt rage, desperation and the humiliating feeling of betrayal
+      creeping up inside of me. \n\nYou approached me in an attempt to embrace me
+      but all I felt was disgust."
     choices:
     - choiceText: "\u201CGet out of here and never come back!\u201D"
       choiceValue: 5
-    - choiceText: I push them away from me.
+    - choiceText: I push you away from me.
       choiceValue: 1
     - choiceText: "\u201CI wish I had cheated on you when I had the chance.\u201D"
       choiceValue: 5
