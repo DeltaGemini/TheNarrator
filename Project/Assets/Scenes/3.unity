@@ -151,7 +151,7 @@ MonoBehaviour:
       choiceValue: 1
     - choiceText: "\u201CI like you too. A lot.\u201D"
       choiceValue: 5
-    - choiceText: "It took courage to say: \n\u201CYou\u2019re \u2026 cute.\u201D"
+    - choiceText: "It took courage to say: \n\u201CYou\u2019re \u2026 sweet.\u201D"
       choiceValue: 5
     timeUntilNextText: 0
 --- !u!4 &115110993
