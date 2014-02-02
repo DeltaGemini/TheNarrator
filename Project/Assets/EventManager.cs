@@ -25,7 +25,10 @@ public class EventManager : MonoBehaviour
 		private List<GUITexture> choiceWindows;
 		public List<EventText> eventTexts;
 		private int textPos = -1;
-		private bool showedLastText=false;
+		private bool showedLastText = false;
+		float screenWidth;
+		float screenHeight;
+
 		// Use this for initialization
 		void Start ()
 		{
@@ -79,79 +82,80 @@ public class EventManager : MonoBehaviour
 		public void UpdateTextsAndChoices ()
 		{
 			
-			if (textPos < eventTexts.Count - 1) {
-				textPos++;
-				description.text = eventTexts [textPos].descriptionText;
+				if (textPos < eventTexts.Count - 1) {
+						textPos++;
+						description.text = eventTexts [textPos].descriptionText;
 				
-				if (gotChoices ()) {
-					for (int i=0; i<eventTexts[textPos].choices.Count; i++) {
-						choices [i].text = eventTexts [textPos].choices [i].choiceText;
-						//choiceWindows [i].enabled = true;
-					}
-				} else {
-					choice1.text = "";
-					choice2.text = "";
-					choice3.text = "";
-					choice4.text = "";
+						if (gotChoices ()) {
+								for (int i=0; i<eventTexts[textPos].choices.Count; i++) {
+										choices [i].text = eventTexts [textPos].choices [i].choiceText;
+										//choiceWindows [i].enabled = true;
+								}
+						} else {
+								choice1.text = "";
+								choice2.text = "";
+								choice3.text = "";
+								choice4.text = "";
 					
-					choiceWindow1.enabled = false;
-					choiceWindow2.enabled = false;
-					choiceWindow3.enabled = false;
-					choiceWindow4.enabled = false;
+								choiceWindow1.enabled = false;
+								choiceWindow2.enabled = false;
+								choiceWindow3.enabled = false;
+								choiceWindow4.enabled = false;
+						}
+				} else if (!showedLastText) {
+						if ((resultA == "" || resultA == null) && (resultB == null || resultB == "")) {
+								AfterLastText ();
+						} else {
+								Debug.Log ("SHOWING LAST TEXT!");
+								showedLastText = true;
+								description.text = "";
+								choice1.text = "";
+								choice2.text = "";
+								choice3.text = "";
+								choice4.text = "";
+				
+								choiceWindow1.enabled = false;
+								choiceWindow2.enabled = false;
+								choiceWindow3.enabled = false;
+								choiceWindow4.enabled = false;
+				
+								if (score >= decisionValue) {
+										description.text = resultA;
+								} else {
+										description.text = resultB;				
+					
+								}
+						}
 				}
-			} else if(!showedLastText){
-			if((resultA=="" || resultA==null) && (resultB==null || resultB=="")){
-				AfterLastText();
-			} else {
-				Debug.Log ("SHOWING LAST TEXT!");
-				showedLastText=true;
+
+		}
+
+		public void AfterLastText ()
+		{
 				description.text = "";
 				choice1.text = "";
 				choice2.text = "";
 				choice3.text = "";
 				choice4.text = "";
-				
+		
 				choiceWindow1.enabled = false;
 				choiceWindow2.enabled = false;
 				choiceWindow3.enabled = false;
 				choiceWindow4.enabled = false;
-				
-				if(score>=decisionValue){
-					description.text = resultA;
-				} else {
-					description.text = resultB;				
-					
-				}
-			}
-		}
-
-	}
-
-		public void AfterLastText(){
-		description.text = "";
-		choice1.text = "";
-		choice2.text = "";
-		choice3.text = "";
-		choice4.text = "";
 		
-		choiceWindow1.enabled = false;
-		choiceWindow2.enabled = false;
-		choiceWindow3.enabled = false;
-		choiceWindow4.enabled = false;
-		
-		GameObject.FindGameObjectWithTag ("fadeInOut").GetComponent<FadeInOut> ().Fade (false);
-		Invoke ("LoadNewScene", GameObject.FindGameObjectWithTag ("fadeInOut").GetComponent<FadeInOut> ().fadeTime);
+				GameObject.FindGameObjectWithTag ("fadeInOut").GetComponent<FadeInOut> ().Fade (false);
+				Invoke ("LoadNewScene", GameObject.FindGameObjectWithTag ("fadeInOut").GetComponent<FadeInOut> ().fadeTime);
 
 		}
 
 		public void LoadNewScene ()
 		{ 
 				if (gameOverScene) {	
-						if(score==20){
-				Application.LoadLevel("2");
-			} else {
-						GameObject.FindGameObjectWithTag ("SceneManager").GetComponent<SceneManager> ().GoBackInTime ();
-			}
+						if (score == 20) {
+								Application.LoadLevel ("2");
+						} else {
+								GameObject.FindGameObjectWithTag ("SceneManager").GetComponent<SceneManager> ().GoBackInTime ();
+						}
 				} else {
 						if (score >= decisionValue) {
 								Application.LoadLevel (highValueSceneName);
@@ -170,42 +174,45 @@ public class EventManager : MonoBehaviour
 		void Update ()
 		{
 				if (Input.GetMouseButtonDown (0)) {
-			if(!gotChoices ()){
-						UpdateTextsAndChoices ();
-				} else if(showedLastText){
-				AfterLastText();
-			}
-	}
-	}
+						if (!gotChoices ()) {
+								UpdateTextsAndChoices ();
+						} else if (showedLastText) {
+								AfterLastText ();
+						}
+				}
+		}
 
 		void OnGUI ()
-		{
+		{		
+				screenWidth = Screen.width;
+				screenHeight = Screen.height;
+
 				GUI.skin = inGameGUI;
 
-				GUI.Label (new Rect (35, 30, 500, 300), description.text);
+				GUI.Label (new Rect (screenWidth*0.01f, screenHeight*0.01f, screenWidth*0.4f, screenHeight*0.45f), description.text);
 				
-				if(choice1.text!=null && choice1.text!=""){
-			if (GUI.Button (new Rect (35, 380, 400, 50), choice1.text)) {					
-						GameObject.FindGameObjectWithTag ("EventManager").GetComponent<EventManager> ().selectChoice (0);
-					}
+				if (choice1.text != null && choice1.text != "") {
+			if (GUI.Button (new Rect (screenWidth*0.01f, screenWidth*0.01f+screenHeight*0.5f, screenWidth*0.4f, 50), choice1.text)) {					
+								GameObject.FindGameObjectWithTag ("EventManager").GetComponent<EventManager> ().selectChoice (0);
+						}
 				}
 
-				if(choice2.text!=null && choice2.text!=""){
-			if (GUI.Button (new Rect (35, 450, 400, 50), choice2.text)) {					
-						GameObject.FindGameObjectWithTag ("EventManager").GetComponent<EventManager> ().selectChoice (1);
-					}
+				if (choice2.text != null && choice2.text != "") {
+			if (GUI.Button (new Rect (screenWidth*0.01f, screenWidth*0.01f+screenHeight*0.6f, screenWidth*0.4f, 50), choice2.text)) {					
+								GameObject.FindGameObjectWithTag ("EventManager").GetComponent<EventManager> ().selectChoice (1);
+						}
 				}
 
-				if(choice3.text!=null && choice3.text!=""){
-					if (GUI.Button (new Rect (35, 520, 400, 50), choice3.text)) {					
-						GameObject.FindGameObjectWithTag ("EventManager").GetComponent<EventManager> ().selectChoice (2);
-					}
+				if (choice3.text != null && choice3.text != "") {
+			if (GUI.Button (new Rect (screenWidth*0.01f, screenWidth*0.01f+screenHeight*0.7f, screenWidth*0.4f, 50), choice3.text)) {					
+								GameObject.FindGameObjectWithTag ("EventManager").GetComponent<EventManager> ().selectChoice (2);
+						}
 				}
 
-				if(choice4.text!=null && choice4.text!=""){
-					if (GUI.Button (new Rect (35, 590, 400, 50), choice4.text)) {					
-						GameObject.FindGameObjectWithTag ("EventManager").GetComponent<EventManager> ().selectChoice (3);
-					}
+				if (choice4.text != null && choice4.text != "") {
+			if (GUI.Button (new Rect (screenWidth*0.01f, screenWidth*0.01f+screenHeight*0.8f, screenWidth*0.4f, 50), choice4.text)) {					
+								GameObject.FindGameObjectWithTag ("EventManager").GetComponent<EventManager> ().selectChoice (3);
+						}
 				}
 		}
 }
